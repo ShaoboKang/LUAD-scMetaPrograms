@@ -1,0 +1,58 @@
+# =============================================================================
+# GitIgnore for LUAD-scMetaPrograms
+# =============================================================================
+
+# ---- Large data files ----
+*.rds
+*.RData
+*.rda
+*.loom
+*.h5ad
+*.h5
+*.tar.gz
+*.zip
+
+# ---- Raw sequencing data / expression matrices ----
+sc_data/
+st_datasets/
+bulk/
+*.fastq
+*.fastq.gz
+*.bam
+*.sam
+*.cram
+
+# ---- Reference databases (user should download separately) ----
+msigdb_v2024.1.Hs_GMTs/
+*.gmt
+
+# ---- Results / intermediate outputs ----
+results/
+Result_*/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.tiff
+*.svg
+
+# ---- R / Python environment files ----
+.Rproj.user
+.Rhistory
+.RData
+.renv/
+renv.lock
+.python-version
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- Temporary files ----
+*.tmp
+*.swp
+*~
