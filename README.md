@@ -7,9 +7,10 @@ Code repository for the manuscript:
 
 > **Identifying consensus tumor cell states and characterizing their roles in lung adenocarcinoma progression and clinical outcomes**
 >
-> Shaobo Kang<sup>1#</sup>, Yijing Zhang<sup>1#</sup>, Renjie Dou<sup>1#</sup>, Yanyan Ping<sup>1*</sup>
+> Shaobo Kang<sup>1#</sup>, Yijing Zhang<sup>1#</sup>, Renjie Dou<sup>1#</sup>, Yansong Jin<sup>2</sup>, Yanyan Ping<sup>1*</sup>
 >
-> <sup>1</sup> College of Bioinformatics Science and Technology, Harbin Medical University, Harbin 150081, China
+> <sup>1</sup> College of Bioinformatics Science and Technology, Harbin Medical University, Harbin 150081, China  
+> <sup>2</sup> College of Computer Science and Technology, Zhejiang University of Technology, Hangzhou 310023, China
 >
 > <sup>#</sup> These authors contributed equally to this work as first authors.
 > <sup>*</sup> Corresponding author: pingyanyan@hrbmu.edu.cn
