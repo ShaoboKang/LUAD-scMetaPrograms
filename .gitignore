@@ -56,3 +56,6 @@ Thumbs.db
 *.tmp
 *.swp
 *~
+
+# ---- Manuscript files (publisher copyright) ----
+manuscript/
