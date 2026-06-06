@@ -7,13 +7,9 @@ Code repository for the manuscript:
 
 > **Identifying consensus tumor cell states and characterizing their roles in lung adenocarcinoma progression and clinical outcomes**
 >
-> Shaobo Kang<sup>1#</sup>, Yijing Zhang<sup>1#</sup>, Renjie Dou<sup>1#</sup>, Yansong Jin<sup>2</sup>, Yanyan Ping<sup>1*</sup>
+> Shaobo Kang<sup>1</sup>
 >
-> <sup>1</sup> College of Bioinformatics Science and Technology, Harbin Medical University, Harbin 150081, China  
-> <sup>2</sup> College of Computer Science and Technology, Zhejiang University of Technology, Hangzhou 310023, China
->
-> <sup>#</sup> These authors contributed equally to this work as first authors.
-> <sup>*</sup> Corresponding author: pingyanyan@hrbmu.edu.cn
+> <sup>1</sup> College of Bioinformatics Science and Technology, Harbin Medical University, Harbin 150081, China
 
 ---
 
@@ -300,7 +296,7 @@ file.path(RESULT_2_DIR, "results_data", "output.rds")
 If you use this code or the MP-state framework in your research, please cite:
 
 ```
-Kang S, Zhang Y, Dou R, Ping Y. Identifying consensus tumor cell states and characterizing 
+Kang S. Identifying consensus tumor cell states and characterizing 
 their roles in lung adenocarcinoma progression and clinical outcomes. [Journal]. Year.
 ```
 
@@ -318,8 +314,7 @@ This project is licensed under the MIT License — see the repository for detail
 
 For questions about the code, please open an issue on GitHub or contact:
 
-- **Yanyan Ping** (Corresponding author): pingyanyan@hrbmu.edu.cn
-- **Shaobo Kang / Yijing Zhang / Renjie Dou** (First authors)
+- **Shaobo Kang**
 
 College of Bioinformatics Science and Technology  
 Harbin Medical University, Harbin 150081, China
