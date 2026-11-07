@@ -161,6 +161,8 @@ run_analysis <- function(
     data_list[[i]] <- cbind(clin_list[[i]], data_list_combat[[i]])
   }
 
+  saveRDS(data_list, file.path(output_dir, "data_list_for_SHAP.rds"))
+
   message("Sourcing modified ML function...")
   source(ml_func_path)
 

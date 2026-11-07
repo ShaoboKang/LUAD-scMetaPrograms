@@ -1,0 +1,2 @@
+"Release","Gene","Entrez","Annotated_LUAD_models","Engineered_models_excluded","LUAD_cell_lines_in_primary_filter","LUAD_with_FOXM1_score","LUAD_without_FOXM1_score","Median","Q1","Q3","Minimum","Maximum","Below_zero","At_or_below_minus_0_5","At_or_below_minus_1"
+"DepMap 24Q4 Public, version 1","FOXM1",2305,91,3,88,51,37,-0.387490084241916,-0.505842806318731,-0.292090391629447,-1.18262184140938,0.109360180192798,48,16,1

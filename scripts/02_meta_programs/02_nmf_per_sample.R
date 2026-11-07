@@ -182,9 +182,7 @@ run_nmf_analysis <- function(
 
 if (!interactive()) {
   # Attempt to source config.R; if not available, use defaults
-  config_path <- file.path(
-    dirname(dirname(dirname(dirname(getwd())))), "config.R"
-  )
+  config_path <- "config.R"
   if (!file.exists(config_path)) {
     config_path <- "~/LUAD-scMetaPrograms/config.R"
   }

@@ -17,8 +17,8 @@
 # =============================================================================
 
 # ---- User-configurable paths ----
-BASE_DIR <- "~/LUAD_project"
-CODE_DIR <- "~/LUAD-scMetaPrograms"  # Path to this code repository
+BASE_DIR <- path.expand(Sys.getenv("LUAD_ROOT", "~/LUAD_project"))
+CODE_DIR <- normalizePath(Sys.getenv("LUAD_CODE_ROOT", getwd()), mustWork = TRUE)  # Path to this code repository
 
 # ---- Derived paths (do not modify below unless you know what you're doing) ----
 SC_DATA_DIR      <- file.path(BASE_DIR, "sc_data")
@@ -53,3 +53,17 @@ init_result_dirs <- function() {
 init_result_dirs()
 
 message("[config.R] Loaded. BASE_DIR = ", BASE_DIR)
+
+# English aliases for locally named input folders/files. Override without renaming data.
+DIAGNOSTIC_DIR <- path.expand(Sys.getenv("LUAD_DIAGNOSTIC_DIR",
+  file.path(BULK_DIR, "\u8bca\u65ad\u6570\u636e")))
+CLINICAL_FILE <- path.expand(Sys.getenv("LUAD_CLINICAL_FILE",
+  file.path(BULK_DIR, "7\u5957GEO\u548cTCGA\u4e34\u5e8a\u4fe1\u606f\u7528\u4e8e\u591a\u56e0\u7d20fenx.rds")))
+MODEL_DIR <- file.path(RESULT_8_DIR, "Mime_TF_selection")
+SHAP_DIR <- file.path(RESULT_8_DIR, "SHAP_results")
+MP_LEGACY_ORDER <- c("MP_1", "MP_8", "MP_2", "MP_7", "MP_4",
+                     "MP_6", "MP_5", "MP_3", "MP_9")
+MP_STATE_NAMES <- c("G2M", "G1S", "NFkB", "MHC-II", "Translation",
+                    "OXPHOS", "Adhesion", "EMT", "Glycolysis")
+SIGNATURE_TFS <- c("FOXM1", "TFDP1", "FOSL2", "KLF4", "CEBPG", "ATF1", "POU6F1", "XBP1")
+FINAL_MODEL <- "StepCox[forward] + Enet[\u03b1=0.7]"

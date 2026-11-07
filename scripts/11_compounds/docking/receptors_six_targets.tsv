@@ -1,0 +1,7 @@
+Gene_Name	receptor_pdbqt	box_config
+FOSL2	receptors_prepared/FOSL2_AlphaFold.pdbqt	receptors_prepared/FOSL2_AlphaFold_test.box.txt
+ATF1	receptors_prepared/ATF1_AlphaFold.pdbqt	receptors_prepared/ATF1_AlphaFold_test.box.txt
+CEBPG	receptors_prepared/CEBPG_AlphaFold.pdbqt	receptors_prepared/CEBPG_AlphaFold_test.box.txt
+FOXM1	receptors_prepared/FOXM1_3G73.pdbqt	receptors_prepared/FOXM1_3G73_test.box.txt
+KLF4	receptors_prepared/KLF4_AlphaFold.pdbqt	receptors_prepared/KLF4_AlphaFold_test.box.txt
+TFDP1	receptors_prepared/TFDP1_AlphaFold.pdbqt	receptors_prepared/TFDP1_AlphaFold_test.box.txt

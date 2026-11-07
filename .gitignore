@@ -27,7 +27,7 @@ msigdb_v2024.1.Hs_GMTs/
 *.gmt
 
 # ---- Results / intermediate outputs ----
-results/
+results/*
 Result_*/
 *.pdf
 *.png
@@ -58,4 +58,17 @@ Thumbs.db
 *~
 
 # ---- Manuscript files (publisher copyright) ----
-manuscript/
+manuscript/*
+
+# Release validation and packaged documentation
+!results/README.md
+!manuscript/README.md
+# External GraphBAN/docking working assets
+vendor/GraphBAN/inductive_mode/result/
+vendor/GraphBAN/inductive_mode/trained_models/
+*.pth
+*.pt
+*.sdf
+*.pdbqt
+*.pdb
+.venv/

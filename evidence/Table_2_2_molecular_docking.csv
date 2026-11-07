@@ -1,0 +1,11 @@
+﻿Protein,Ligand,Component,Affinity (kcal/mol)
+FOSL2,DB09372,Tannic acid,-6.827
+VPS72,DB09372,Tannic acid,-6.048
+VPS72,DB06206,Sugammadex,-3.863
+ATF1,DB06206,Sugammadex,-4.553
+CEBPG,DB06206,Sugammadex,-4.014
+FOXM1,DB15997,Perfluorooctane,-5.667
+FOXM1,DB09372,Tannic acid,-6.734
+KLF4,DB15997,Perfluorooctane,-6.404
+TFDP1,DB15008,GO-203-2C,-5.265
+FOXM1,DB05791,Perflubron,-5.581

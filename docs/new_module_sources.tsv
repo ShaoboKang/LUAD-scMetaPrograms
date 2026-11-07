@@ -1,0 +1,22 @@
+original_source	release_script	adaptation
+Result_2/code/11_MP_univariable_Cox_forest_by_state.R	scripts/08_clinical/12_mp_survival_eight_cohorts.R	Path aliases only
+Result_8/code/07_RS_8cohorts_multivariable_Cox.R	scripts/08_clinical/13_risk_multivariable_eight_cohorts.R	Path aliases; original endpoint handling retained
+Mime_筛选关键TF/code/SHAP.R	scripts/08_clinical/14_exact_shap.R	English functional implementation of exact Cox SHAP with saved-risk and additivity checks
+Mime_筛选关键TF/code/SHAP_scatter_publication.R	scripts/08_clinical/14_exact_shap.R	Summary plotting included in SHAP implementation
+bulk/诊断数据/Step_ssgsea_MP_AUC.R	scripts/09_diagnostic/01_mp_diagnostic_auc.R	Functional scoring and ROC implementation with input validation
+bulk/诊断数据/Step_MP_ROC_curves_plot.R	scripts/09_diagnostic/01_mp_diagnostic_auc.R	ROC plots integrated
+bulk/诊断数据/Step_redraw_heatmap_ROC.R	scripts/09_diagnostic/01_mp_diagnostic_auc.R	Heatmap/ROC presentation integrated
+Result_8/code/08_download_FOXM1_DepMap.py	scripts/10_dependency/01_download_depmap.py	Configurable data root
+Result_8/code/09_FOXM1_DepMap_LUAD_CRISPR.R	scripts/10_dependency/02_foxm1_dependency.R	Shared config and relocated plot helper
+Result_8/code/10_FOXM1_DepMap_ranked_landscape.R	scripts/10_dependency/utils/ranked_landscape.R	Preserved plot helper
+GraphBAN_teach/code/S1_GraphBNA_prepare.r	scripts/11_compounds/01_prepare_screen.py	Six author-confirmed targets; local FASTA/TSV input validation
+GraphBAN_teach/code/GraphBNA.sh	scripts/11_compounds/02_predict_graphban.sh	Configurable source/checkpoints; same three model predictions
+GraphBAN_teach/code/GraphBNA_filter.sh	scripts/11_compounds/03_consensus_candidates.py	Strict >0.9 and three-model intersection
+GraphBAN_teach/code/GraphBNA_final.r	scripts/11_compounds/03_consensus_candidates.py	Unique-pair/SMILES checks; six-target view and historical all-target audit
+GraphBAN_teach/docking/01_smiles_to_3d.py	scripts/11_compounds/docking/01_smiles_to_3d.py	English comments; create results directory
+GraphBAN_teach/docking/01_retry_failed_ligands.py	scripts/11_compounds/docking/02_retry_ligands.py	Configurable docking root; English comments
+GraphBAN_teach/docking/run_batch_vina.py	scripts/11_compounds/docking/03_run_vina.py	Configurable root; remove VPS72 from target list
+GraphBAN_teach/docking/prepare_six_receptors.sh	scripts/11_compounds/docking/legacy_prepare_alphafold_receptors.sh	Configurable root; remove VPS72; preserve historical structural sources
+Result_6/code/04_CARD.R	scripts/06_deconvolution/legacy/04_card.R	Historical spatial annotation dependency; paths and comments standardized
+Result_6/code/CARD_visualize.R	scripts/06_deconvolution/legacy/card_visualize.R	Historical plotting helper
+Result_8/code/02_scissor.R	scripts/07_trajectory/00_prepare_harmony.R	Restore commented Harmony preparation as a callable stage

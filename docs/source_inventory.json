@@ -1,0 +1,2166 @@
+[
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/GraphBAN_DEMO.ipynb",
+    "sha256": "feef85df3d4d6a59874fb9998b78545faeea7f7a7f451e9bc4b69a18fc34dd91",
+    "lines": 2201,
+    "packages": [],
+    "io": [
+      "\"  Downloading torchdata-0.8.0-cp310-cp310-manylinux1_x86_64.whl.metadata (5.4 kB)\\n\",",
+      "\"Downloading torchdata-0.8.0-cp310-cp310-manylinux1_x86_64.whl (2.7 MB)\\n\",",
+      "\"Successfully installed dgl-2.3.0+cu121 nvidia-cublas-cu12-12.1.3.1 nvidia-cuda-cupti-cu12-12.1.105 nvidia-cuda-nvrtc-cu12-12.1.105 nvidia-cuda-runtime-cu12-12.1.105 nvidia-cudnn-cu12-8.9.2.26 nvidia-cufft-cu12-11.0.2.54",
+      "\"Requirement already satisfied: py4j in /usr/local/lib/python3.10/dist-packages (from hyperopt->dgllife) (0.10.9.7)\\n\",",
+      "\"  Downloading torchdata-0.8.0-cp310-cp310-manylinux1_x86_64.whl.metadata (5.4 kB)\\n\",",
+      "\"Downloading torchdata-0.8.0-cp310-cp310-manylinux1_x86_64.whl (2.7 MB)\\n\",",
+      "\"Successfully installed dgl-2.1.0+cu121 torchdata-0.8.0\\n\",",
+      "\"Requirement already satisfied: tabulate>=0.8.10 in /usr/local/lib/python3.10/dist-packages (from numpydoc>=1.1.0->dglgo) (0.9.0)\\n\",",
+      "\"Requirement already satisfied: py4j in /usr/local/lib/python3.10/dist-packages (from hyperopt->dgllife) (0.10.9.7)\\n\",",
+      "\"#df_train = pd.read_csv(\\\"/content/GraphBAN/Data/BioSNAP/transductive/train.csv\\\")\\n\",",
+      "\"#df_val = pd.read_csv(\\\"/content/GraphBAN/Data/BioSNAP/transductive/val.csv\\\")\\n\",",
+      "\"#df_test = pd.read_csv(\\\"/content/GraphBAN/Data/BioSNAP/transductive/test.csv\\\")\"",
+      "\"df_train = pd.read_csv(\\\"/content/GraphBAN/Data/BioSNAP/inductive/source_train.csv\\\")# source_train\\n\",",
+      "\"df_val = pd.read_csv(\\\"/content/GraphBAN/Data/BioSNAP/inductive/target_train.csv\\\")#target_train\\n\",",
+      "\"df_test = pd.read_csv(\\\"/content/GraphBAN/Data/BioSNAP/inductive/target_test.csv\\\")#target_test\"",
+      "\"train_emb = pd.read_csv(\\\"/content/GraphBAN/Data/BioSNAP/inductive/teacher_biosnap_cluster_juststructure_emb_256_source_train.csv\\\")\"",
+      "\"b = pd.read_csv(\\\"source_train.csv\\\")\\n\",",
+      "\"  Downloading https://data.pyg.org/whl/torch-2.3.0%2Bcu121/torch_scatter-2.1.2%2Bpt23cu121-cp310-cp310-linux_x86_64.whl (10.9 MB)\\n\",",
+      "\"\\u001b[2K     \\u001b[90m\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\\u001b[0m \\u001b[32m10.9/10.9 MB\\u001b[0m \\u001b[31m73.6 MB/s\\u001b[0m eta \\u001b[36m0:00:00\\u001b[0m\\n\",",
+      "\"Collecting lightning-utilities>=0.8.0 (from torchmetrics)\\n\",",
+      "\"Requirement already satisfied: setuptools in /usr/local/lib/python3.10/dist-packages (from lightning-utilities>=0.8.0->torchmetrics) (67.7.2)\\n\",",
+      "\"Requirement already satisfied: typing-extensions in /usr/local/lib/python3.10/dist-packages (from lightning-utilities>=0.8.0->torchmetrics) (4.11.0)\\n\",",
+      "\"0  [0.5657851, 0.97027797, 1.1025445, 0.927274, 0...  \\n\",",
+      "\"      <td>[0.5657851, 0.97027797, 1.1025445, 0.927274, 0...</td>\\n\",",
+      "\"Test at Best Model of Epoch 1 with test loss 0.7133082295286244  AUROC 0.6373042886317223 AUPRC 0.6165217661104248 f1-score 0.6818828139220221 Specificity 0.9098901098901099 Accuracy 0.5766262403528115 Thred_optim 0.193",
+      "\"**Test at Best Model of Epoch 1** with test loss 0.7133082336392896  AUROC 0.6373042886317223 AUPRC 0.6165217661104248 f1-score 0.6818828139220221 Specificity 0.9098901098901099 Accuracy 0.5766262403528115 Thred_optim 0"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/BindingDB_predict.py",
+    "sha256": "634b50e77b0138d5565d900eb1fc605e085b40fb9b00ba5d5c09d4e9feba3cb2",
+    "lines": 52,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv(csv_file_path)"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/BindingDB_run.py",
+    "sha256": "bd41295d38898e0ebaa3a7d66bbab59fd93e1d9f602e53f5887289ec6a3cf8b0",
+    "lines": 18,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/BioSNAP_predict.py",
+    "sha256": "17b399499bb1774f5efe9e493903d6061b5361ea69af4208871a4daa7e32c9e9",
+    "lines": 53,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv(csv_file_path)"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/BioSNAP_run.py",
+    "sha256": "6bb70f0329effdf8d25cc48ae848d06eeb39f40bc6d63d7f5f5eca537725ad59",
+    "lines": 18,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/KIBA_predict.py",
+    "sha256": "1f986b439f657879c43d62186381731cdb42349f4da8adf206a92bc1904449cf",
+    "lines": 52,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv(csv_file_path)"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/KIBA_run.py",
+    "sha256": "a1837d3246877fad45f19c4b5ced164f70ece5b25f19a57910a5f3c1f9f489ed",
+    "lines": 18,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/ban.py",
+    "sha256": "e84a505bc72eeb50cd2fee8d57b6c2fa928f65d751a4588cd36a412f579aff56",
+    "lines": 150,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/configs.py",
+    "sha256": "8df18a1b414b462f226af4bdf7c3be5e78b69370fb090b3440d2fd514bf0e20e",
+    "lines": 63,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/dataloader.py",
+    "sha256": "d350534800cce03ad4a572d6a2cdec40ca93404fd7e7c43c3e5883e0d52ae05d",
+    "lines": 120,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/domain_adaptator.py",
+    "sha256": "d93ee35db7c7918ea3066c83ed551861801b2d13712c3254270704bcc64db6d1",
+    "lines": 50,
+    "packages": [],
+    "io": [
+      "ctx.alpha = alpha"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/models.py",
+    "sha256": "940b69a52da7052199b7e1e9277719df0632ebc6a4e78a460312901f182a4d6f",
+    "lines": 281,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/predict.py",
+    "sha256": "17548c6c9011f575d21670e5831a52016c80da22490b4a0d9e586b3c05525337",
+    "lines": 154,
+    "packages": [],
+    "io": [
+      "df_test = pd.read_csv(args.test_path)",
+      "modelG.load_state_dict(torch.load(model))"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/run_model.py",
+    "sha256": "d2935e9d228ec891d77b04d9108cb4c2af9a614b3f61b10f7f36dc6688b544f8",
+    "lines": 266,
+    "packages": [],
+    "io": [
+      "df_train = pd.read_csv(args.train_path)",
+      "df_val = pd.read_csv(args.val_path)",
+      "df_test = pd.read_csv(args.test_path)"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/trainer.py",
+    "sha256": "455743cb3e4c3a42d6b36314c217f578e389bef84a8b3dd3b04e3c02be10313d",
+    "lines": 413,
+    "packages": [],
+    "io": [
+      "experiment=None, alpha=1, **config):",
+      "self.alpha = alpha"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/trainer_pred.py",
+    "sha256": "2f3428edffd531a20dd7ee2bb85fae8b13ad81b5320926398a2eb96140876638",
+    "lines": 150,
+    "packages": [],
+    "io": [
+      "experiment=None, alpha=1, **config):",
+      "self.alpha = alpha"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/case_study/utils.py",
+    "sha256": "0d8fb96e79d023c2bac066a30b07fbdcbad4deac95df50cc4304645b2e620a87",
+    "lines": 85,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/data_distribution/RF_extractFeatures.py",
+    "sha256": "10b9a6ca6bf604c3b49565327a3ab51c612b6e82fe1f0d078d0c252898199f7f",
+    "lines": 92,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv('test_celegan12.csv')"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/data_distribution/plot_tsnes.py",
+    "sha256": "da7852ccacc4b9eef50afebda60b2258944f7b0f06931ee3302cc1fb81b9179f",
+    "lines": 27,
+    "packages": [],
+    "io": [
+      "binding_train = pd.read_csv(\"bindingdb_trans_12_train_features.csv\")",
+      "binding_test = pd.read_csv(\"bindingdb_trans_12_test_features.csv\")",
+      "plt.scatter(bindingdb_train_tsne[:, 0], bindingdb_train_tsne[:, 1], color='red', alpha=0.5, label='ST Dataset', s=10)",
+      "plt.scatter(bindingdb_test_tsne[:, 0], bindingdb_test_tsne[:, 1], color='blue', alpha=0.5, label='TT Dataset', s=10)"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/ban.py",
+    "sha256": "e84a505bc72eeb50cd2fee8d57b6c2fa928f65d751a4588cd36a412f579aff56",
+    "lines": 150,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/configs.py",
+    "sha256": "8c70a84efa09a1a0727467fd388ec866e0889b0d69352a3000a4395a017fe154",
+    "lines": 63,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/dataloader.py",
+    "sha256": "ea0651a881062821797b21e85205cb31b527e9bfe62e6e4ca66a3901ece3bc5e",
+    "lines": 120,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/domain_adaptator.py",
+    "sha256": "d93ee35db7c7918ea3066c83ed551861801b2d13712c3254270704bcc64db6d1",
+    "lines": 50,
+    "packages": [],
+    "io": [
+      "ctx.alpha = alpha"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/models.py",
+    "sha256": "940b69a52da7052199b7e1e9277719df0632ebc6a4e78a460312901f182a4d6f",
+    "lines": 281,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/predict.py",
+    "sha256": "4304228ce16385e68651d2652e2cb8d246494fc56550566a47e6ad795840b828",
+    "lines": 107,
+    "packages": [],
+    "io": [
+      "df_test = pd.read_csv(args.test_path)",
+      "modelG.load_state_dict(torch.load(args.trained_model, map_location=torch.device(\"cpu\")))"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/run_model.py",
+    "sha256": "58e782119306c8c21bd987eef7019058a11c41caa62c6675255e0a7a26ba9cbf",
+    "lines": 264,
+    "packages": [],
+    "io": [
+      "df_train = pd.read_csv(args.train_path)",
+      "df_val = pd.read_csv(args.val_path)",
+      "df_test = pd.read_csv(args.test_path)"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/teacher_gae.py",
+    "sha256": "718821ebb0f3d47ebdd2e9beddd3374c513b66aea32d6bdcc1b347bca0a22fa0",
+    "lines": 213,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv(path, index_col=index_col, **kwargs)",
+      "df = pd.read_csv(path, **kwargs)"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/trainer.py",
+    "sha256": "90f3d75fbae920da20c89b67743194c79f968c7e80703299fbf26c8b6c1431af",
+    "lines": 622,
+    "packages": [],
+    "io": [
+      "experiment=None, alpha=1, **config):",
+      "self.alpha = alpha",
+      "experiment=None, alpha=1, **config):",
+      "self.alpha = alpha"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/trainer_pred.py",
+    "sha256": "4be71a4d328e5e795d49c85ffc9033716b656c9bdbceb990aba04b99b5ef3aa6",
+    "lines": 185,
+    "packages": [],
+    "io": [
+      "experiment=None, alpha=1, **config):",
+      "self.alpha = alpha"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/utils.py",
+    "sha256": "5d8bd5a33718e7d7ee2331b79912f782b086e172ace1552444f0dd3b5b0ea34f",
+    "lines": 85,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/preprocessing/clustering/inductive_split.py",
+    "sha256": "0a2633ac0b752030a1fbdae04125ac3a21703c0143217b2ef5ec2c261ae006f6",
+    "lines": 133,
+    "packages": [],
+    "io": [
+      "target_train_df = target_df.sample(frac=0.8, random_state=seed)",
+      "df = pd.read_csv(\"balanced_pdb_dataset12.csv\")"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/preprocessing/clustering/transductive_split.py",
+    "sha256": "8372e723a53133ad2c684ba9012e4c50d2beca52f5f5bbb573af89e34c376b9a",
+    "lines": 44,
+    "packages": [],
+    "io": [
+      "def split_csv(file_path, train_ratio=0.8, val_ratio=0.1, test_ratio=0.1):",
+      "df = pd.read_csv(file_path)"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/preprocessing/just_extractFeatures.py",
+    "sha256": "0860b6f52cf1d4d14d6d45612030f4b0c3af66dc8fba581c5c3ed887fa673b52",
+    "lines": 93,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv('train_smiles.csv')"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/transductive_mode/predict_transductive.py",
+    "sha256": "a62e0d2081ed01b72e33d4bd0d160e5167891ffafd9cf234d074966966fc8b37",
+    "lines": 434,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv(path, index_col=index_col, **kwargs)",
+      "df = pd.read_csv(path, **kwargs)",
+      "test_df = pd.read_csv(data_file_path_test)",
+      "model.load_state_dict(torch.load(args.trained_model))",
+      "df_test = pd.read_csv(path_test)"
+    ]
+  },
+  {
+    "path": "GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/transductive_mode/train_transductive_mode.py",
+    "sha256": "9b96caaf9c6765acd5752a3788f0a00c23b363e6d0688e878d776f1d1cb26b17",
+    "lines": 571,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv(path, index_col=index_col, **kwargs)",
+      "df = pd.read_csv(path, **kwargs)",
+      "test_df = pd.read_csv(data_file_path_test)",
+      "#model.load_state_dict(torch.load(args.trained_model))",
+      "model.load_state_dict(torch.load(args.save_model))",
+      "df_train = pd.read_csv(path_train)",
+      "df_val = pd.read_csv(path_val)",
+      "df_test = pd.read_csv(path_test)"
+    ]
+  },
+  {
+    "path": "GraphBAN_teach/GraphBAN.sh",
+    "sha256": "94645db05eb06cadfb5fba9ec1846796a086994b43791aa182e7585f5ff3d9b7",
+    "lines": 35,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_teach/GraphBNA_filter.r",
+    "sha256": "8c55c4da1e9bf3c03bef1699ba9464ed50cd240b2e79fa1cb48b333c59436e9f",
+    "lines": 39,
+    "packages": [
+      "data.table",
+      "dplyr",
+      "readr",
+      "rstudioapi",
+      "tidyr"
+    ],
+    "io": [
+      "setwd(root)",
+      "setwd(wd)",
+      "smiles <- read.csv('../03_herbs/smiles4graphban.csv')#",
+      "saveRDS(inter,'common_gene_mol_intersection.rds')",
+      "write.csv(inter,'common_gene_mol_intersection.csv')"
+    ]
+  },
+  {
+    "path": "GraphBAN_teach/GraphBNA_prepare.r",
+    "sha256": "202a185af71db6ed8896d7f0f94a7f0f145fc3d4bd0dffcbe9037af4e0bfd7f6",
+    "lines": 41,
+    "packages": [
+      "data.table",
+      "dplyr",
+      "rstudioapi",
+      "tidyr"
+    ],
+    "io": [
+      "setwd(root)",
+      "setwd(wd)",
+      "gene <- read.csv('../01_GWAS2Gene/02.genes.csv',row.names = 1)",
+      "prot <- readRDS('/data/nas2/database/graphban/db/uniprot_pep/pep.rds')",
+      "smiles <- read.csv('../03_herbs/smiles4graphban.csv')",
+      "write.csv(df_test,'df_test_in.csv',row.names = F)"
+    ]
+  },
+  {
+    "path": "GraphBAN_teach/code/GraphBNA.sh",
+    "sha256": "935cd20560083971d69d2704b607ae92fac20b5e320a33a95bfe4c7acf5c1a6e",
+    "lines": 39,
+    "packages": [],
+    "io": [
+      "# csvtk cut -f 1,2,5,9 df_test_out_kiba.csv|csvtk filter -f \"pred>0.9\" >df_test_out_kiba_filtered.csv",
+      "# csvtk cut -f 1,2,5,9 df_test_out_biosnap.csv|csvtk filter -f \"pred>0.9\" >df_test_out_biosnap_filtered.csv",
+      "# csvtk cut -f 1,2,5,9 df_test_out_bindingdb.csv|csvtk filter -f \"pred>0.9\" >df_test_out_bindingdb_filtered.csv"
+    ]
+  },
+  {
+    "path": "GraphBAN_teach/code/GraphBNA_filter.sh",
+    "sha256": "d42b4c836bca5438604b11c4fe4544a494948f9957f4ea7ca2740408fdcfdfdb",
+    "lines": 68,
+    "packages": [],
+    "io": [
+      "for chunk in pd.read_csv(",
+      "chunk[\"pred\"] > 0.9,",
+      "print(f\"Selected pairs (pred > 0.9): {selected}\")"
+    ]
+  },
+  {
+    "path": "GraphBAN_teach/code/GraphBNA_final.r",
+    "sha256": "e0b057b98a8566814c2427ca747c5762ca90129a63464b9e81d26ff8bd6e59f1",
+    "lines": 32,
+    "packages": [
+      "data.table",
+      "dplyr",
+      "readr",
+      "rstudioapi",
+      "tidyr"
+    ],
+    "io": [
+      "setwd(\"~/LUAD_project/GraphBAN_restore/HamidHadipour-GraphBAN-d6da0a7/inductive_mode/result/\")",
+      "saveRDS(inter,'common_gene_mol_intersection.rds')",
+      "write.csv(inter,'common_gene_mol_intersection.csv')"
+    ]
+  },
+  {
+    "path": "GraphBAN_teach/code/S1_GraphBNA_prepare.r",
+    "sha256": "487d850897c32d6c425d4e850dc0a169130d46318ab5fcf1d0cafedc798c2b13",
+    "lines": 72,
+    "packages": [
+      "data.table",
+      "dplyr",
+      "tidyr"
+    ],
+    "io": [
+      "setwd(teach_dir)",
+      "setwd(results_dir)",
+      "write.csv(df_test, file.path(results_dir, \"df_test_in.csv\"), row.names = FALSE, quote = TRUE)",
+      "write.csv(prot, file.path(results_dir, \"proteins_7genes.csv\"), row.names = FALSE)"
+    ]
+  },
+  {
+    "path": "GraphBAN_teach/docking/01_retry_failed_ligands.py",
+    "sha256": "d25fa283c5f51fc0384d4afcb62e03281e94a5025e5f967744910a1133388856",
+    "lines": 212,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv(INPUT, dtype={\"id\": str})"
+    ]
+  },
+  {
+    "path": "GraphBAN_teach/docking/01_smiles_to_3d.py",
+    "sha256": "e1705ddf23009696306a755cd9d5ec33c641310f4d8bdf8132d0e7165aa36f85",
+    "lines": 114,
+    "packages": [],
+    "io": [
+      "df = pd.read_csv(input_csv, dtype={\"id\": str})"
+    ]
+  },
+  {
+    "path": "GraphBAN_teach/docking/prepare_six_receptors.sh",
+    "sha256": "a6fd62999428f52215e43cc6ee0cad3b8f232cbec0b64caddb72cc816071161f",
+    "lines": 303,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "GraphBAN_teach/docking/run_batch_vina.py",
+    "sha256": "5a0c9dbc1da23f02d4205fb76503e688df7cba3125aab7de95aa5f557f00b637",
+    "lines": 867,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/ClusterGVis.R",
+    "sha256": "4bc0ecf675fabb2be0a45df025149dfe4b578c88e2e3b7218057915be8f5a4f1",
+    "lines": 98,
+    "packages": [
+      "ClusterGVis",
+      "ComplexHeatmap",
+      "Seurat",
+      "circlize",
+      "dplyr",
+      "monocle3",
+      "org.Hs.eg.db",
+      "tidyr"
+    ],
+    "io": [
+      "load(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/02_Malig_final_MP_top50.RData\")",
+      "TF_names <- readRDS(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/01_top5_TF.rds\")",
+      "TF_activate_pseudotime <- readRDS(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/TF_activate_pseudotime.rds\")"
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/ClusterGVis_all_MP_cells.R",
+    "sha256": "9f36df244e7d3d86fdc09da34a9f73cb7dc86945818ca1f52253315aa17f3379",
+    "lines": 72,
+    "packages": [
+      "ClusterGVis",
+      "Seurat",
+      "dplyr",
+      "monocle3",
+      "org.Hs.eg.db",
+      "tidyr"
+    ],
+    "io": [
+      "LUAD_Epi_assigned_MP  <- readRDS(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/LUAD_Epi_assigned_MP_har.rds\")",
+      "load(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/02_Malig_final_MP_top50.RData\")",
+      "TF_names <- readRDS(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/01_top5_TF.rds\")",
+      "cds <- readRDS(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/03_cds_monocle3.rds\")"
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/Mime_\u7b5b\u9009\u5173\u952eTF.R",
+    "sha256": "7165f4944f771f8f7ca80696026c5f07e5d6122c957b9308885ea029221ebeb8",
+    "lines": 259,
+    "packages": [
+      "Mime1",
+      "doParallel",
+      "ggplot2",
+      "glmnet",
+      "randomForestSRC",
+      "survminer",
+      "sva",
+      "tibble"
+    ],
+    "io": [
+      "TF_names <- readRDS(\"F:/Mime_\u7b5b\u9009\u5173\u952eTF/R_data/01_top5_TF.rds\")",
+      "load(\"F:/Mime_\u7b5b\u9009\u5173\u952eTF/R_data/TCGA_GEO7.rdata\")",
+      "#saveRDS(data_list, file.path( \"F:/Mime_\u7b5b\u9009\u5173\u952eTF/data_list_for_SHAP.rds\" ))",
+      "source(\"F:/Mime_\u7b5b\u9009\u5173\u952eTF/code/my_ML.Dev.Prog.Sig_modified_functions.R\")",
+      "saveRDS(res, \"F:/Mime_\u7b5b\u9009\u5173\u952eTF/Mime_res_\u53bb\u9664\u6279\u6b21\u6548\u5e94.rds\")",
+      "Model_riskscore <- res[[\"riskscore\"]][[\"StepCox[forward] + Enet[\u03b1=0.7]\"]]",
+      "saveRDS(Model_riskscore, file = \"../R_data/Model_riskscore.rds\")",
+      "TCGA_riskscore <- res[[\"riskscore\"]][[\"StepCox[forward] + Enet[\u03b1=0.7]\"]][[\"TCGA\"]]",
+      "saveRDS(TCGA_riskscore, file = \"../R_data/TCGA_riskscore.rds\")",
+      "survplot[[i]]<-rs_sur(res, model_name = \"StepCox[forward] + Enet[\u03b1=0.7]\",dataset = names(data_list)[i],",
+      "xlab=\"Day\",pval.coord=c(1000,0.9))",
+      "model_name = \"StepCox[forward] + Enet[\u03b1=0.7]\",",
+      "model_name = \"StepCox[forward] + Enet[\u03b1=0.7]\",",
+      "model_name = \"StepCox[forward] + Enet[\u03b1=0.7]\",",
+      "linewidth = 0.8) +",
+      "alpha = 0.9) +",
+      "fit_cv <- res$ml.res[\"StepCox[forward] + Enet[\u03b1=0.7]\"][[1]]"
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/SHAP.R",
+    "sha256": "b41a35542d605243e015a0ecd03640716f7cb3edaf770f4c03ccd285827d04c0",
+    "lines": 1153,
+    "packages": [
+      "dplyr",
+      "ggplot2",
+      "glmnet"
+    ],
+    "io": [
+      "# \u6a21\u578b\uff1aStepCox[forward] + Enet[\u03b1=0.7]",
+      "model_name <- \"StepCox[forward] + Enet[\u03b1=0.7]\"",
+      "res <- readRDS(",
+      "# saveRDS(data_list, file.path(project_dir, \"data_list_for_SHAP.rds\"))",
+      "data_list <- readRDS(input_file)",
+      "write.csv(",
+      "write.csv(",
+      "write.csv(",
+      "write.csv(",
+      "write.csv(",
+      "alpha = 0.65,",
+      "write.csv(",
+      "saveRDS(",
+      "# Model: StepCox[forward] + Enet (alpha = 0.7)",
+      "imp <- read.csv(",
+      "coef_df <- read.csv(",
+      "linewidth = 0.9,",
+      "width = 0.98,",
+      "height = 0.98",
+      "subtitle = \"StepCox[forward] + Enet (alpha = 0.7)\","
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/SHAP_scatter_publication.R",
+    "sha256": "e229bbccb0fd65c17b8664a5c4189f41006716855956f0f529b1eeacb7d89401",
+    "lines": 48,
+    "packages": [
+      "ggplot2"
+    ],
+    "io": [
+      "coef <- read.csv(file.path(tab,'Model_coefficients.csv'))",
+      "imp <- read.csv(file.path(tab,'All_cohorts_SHAP_importance.csv'))",
+      "s <- read.csv(file.path(tab,paste0(ds,'_SHAP_values.csv')),check.names=FALSE)",
+      "geom_point(aes(color=Expression),position=position_jitter(width=0,height=.12,seed=520),size=.7,alpha=.85)+",
+      "labs(title='SHAP distributions across LUAD cohorts',subtitle='Fixed Cox model and TCGA background | StepCox[forward] + Enet (alpha = 0.7)',x='SHAP value (Cox linear predictor / log relative risk)',y=NULL,caption='Points:"
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/TCGA\u6570\u636eRS\u4e0e\u836f\u7269\u654f\u611f\u6027\u7684\u76f8\u5173\u6027.R",
+    "sha256": "4a28b733d7b30d2e4a3e8979d88e36e36677489f38d09b6655dffdb9978e55c4",
+    "lines": 191,
+    "packages": [
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggrepel",
+      "tibble",
+      "tidyr"
+    ],
+    "io": [
+      "sen <- read.csv(",
+      "Model_riskscore <- readRDS(file = \"../R_data/Model_riskscore.rds\")",
+      "geom_point(aes(color = Sig), size = 2.2, alpha = 0.8) +",
+      "geom_point(size = 1.2, alpha = 0.7, color = \"#4C78A8\") +",
+      "geom_smooth(method = \"lm\", se = TRUE, color = \"#D55E00\", linewidth = 0.8) +"
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/TCGA\u6570\u636e\u4e2dstage\u5728\u9ad8\u4f4e\u98ce\u9669\u7ec4\u5360\u6bd4.R",
+    "sha256": "01cc86d2ea071582353c09b3ab93c352f9f39241d8cf3025adbdb206e9b996d9",
+    "lines": 65,
+    "packages": [
+      "dplyr",
+      "ggplot2",
+      "scales"
+    ],
+    "io": [
+      "load(\"F:/Mime_\u7b5b\u9009\u5173\u952eTF/R_data/TCGA_GEO7.rdata\")",
+      "Model_riskscore = readRDS(, file = \"../R_data/Model_riskscore.rds\")",
+      "p <- p + annotate(\"text\", x = 1.5, y = 0.95, label = p_label, size = 5)"
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/TCGA\u6570\u636e\u9ad8\u4f4e\u98ce\u9669\u7ec4\u836f\u7269\u654f\u611f\u6027.R",
+    "sha256": "9e7e0dca8bf6a337ccb3edf5bb0a90fd20d0de2716f8a8229bfddc6ce63be894",
+    "lines": 98,
+    "packages": [
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "tidyr"
+    ],
+    "io": [
+      "sen <-read.csv(\"../R_data/calcPhenotype_Output/DrugPredictions.csv\",",
+      "Model_riskscore = readRDS(file = \"../R_data/Model_riskscore.rds\")"
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/binarize_exp.R",
+    "sha256": "23184623637b54f03340cbcce25410302c1876aaa15221fc61918e15034c4be9",
+    "lines": 72,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/geneswitch.R",
+    "sha256": "a845f533b96fab0d1805fd02f59851820b1f4eb15bc674942a979365f8a73e0d",
+    "lines": 69,
+    "packages": [
+      "GeneSwitches",
+      "Seurat",
+      "SingleCellExperiment",
+      "ggplot2"
+    ],
+    "io": [
+      "load(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/02_Malig_final_MP_top50.RData\")",
+      "TF_names <- readRDS(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/01_top5_TF.rds\")",
+      "cds <- readRDS(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/03_cds_monocle3.rds\")",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/LUAD_Epi_assigned_MP_har.rds\")",
+      "source(file=\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/code/binarize_exp.R\")"
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/my_ML.Dev.Prog.Sig_modified_functions.R",
+    "sha256": "b09a301ec7c17ca1a1c1319cc0e8cc96e10458a818521d2d2e76efdd30948ce6",
+    "lines": 4297,
+    "packages": [
+      "BART",
+      "CoxBoost",
+      "Matrix",
+      "compareC",
+      "data.table",
+      "dplyr",
+      "gbm",
+      "ggbreak",
+      "ggplot2",
+      "ggsci",
+      "glmnet",
+      "miscTools",
+      "mixOmics",
+      "plsRcox",
+      "randomForestSRC",
+      "superpc",
+      "survival",
+      "survivalsvm",
+      "tibble",
+      "tidyr"
+    ],
+    "io": [
+      "mode = NULL, single_ml = NULL, alpha_for_Enet = NULL, direction_for_stepcox = NULL,",
+      "if (is.null(alpha_for_Enet) == T) {",
+      "alpha_for_Enet <- 0.1",
+      "alpha_for_Enet <- alpha_for_Enet",
+      "message(\"---1-3.RSF + Enet ---\")",
+      "for (alpha in seq(0.1, 0.9, 0.1)) {",
+      "fit = cv.glmnet(x1, x2, family = \"cox\", alpha = alpha,",
+      "cc$Model <- paste0(\"RSF + \", \"Enet\", \"[\u03b1=\",",
+      "ml.res[[paste0(\"RSF + \", \"Enet\", \"[\u03b1=\", alpha,",
+      "riskscore[[paste0(\"RSF + \", \"Enet\", \"[\u03b1=\",",
+      "alpha = 1)",
+      "alpha = 0)",
+      "message(\"---1-8.RSF + StepCox ---\")",
+      "cc$Model <- paste0(\"RSF + \", \"StepCox\", \"[\",",
+      "ml.res[[paste0(\"RSF + \", \"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"RSF + \", \"StepCox\", \"[\",",
+      "message(\"---2.Enet ---\")",
+      "for (alpha in seq(0.1, 0.9, 0.1)) {",
+      "message(paste0(\"--- 2.Enet\", \"[\u03b1=\", alpha,",
+      "fit = cv.glmnet(x1, x2, family = \"cox\", alpha = alpha,",
+      "cc$Model <- paste0(\"Enet\", \"[\u03b1=\", alpha, \"]\")",
+      "ml.res[[paste0(\"Enet\", \"[\u03b1=\", alpha, \"]\")]] = fit",
+      "riskscore[[paste0(\"Enet\", \"[\u03b1=\", alpha, \"]\")]] = rs",
+      "message(\"---3.StepCox ---\")",
+      "message(paste0(\"---3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction, \"]\")]] = fit",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"---3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "for (alpha in seq(0.1, 0.9, 0.1)) {",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"] ---\"))",
+      "alpha = alpha, nfolds = 10)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"]\")",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"]\")]] = fit",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"]\")]] = rs",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "alpha = 1)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "alpha = 0)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "message(paste0(\"---3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "for (alpha in seq(0.1, 0.9, 0.1)) {",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"] ---\"))",
+      "alpha = alpha, nfolds = 10)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"]\")",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"]\")]] = fit",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"]\")]] = rs",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "alpha = 1)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "alpha = 0)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "message(paste0(\"---3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "for (alpha in seq(0.1, 0.9, 0.1)) {",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"] ---\"))",
+      "alpha = alpha, nfolds = 10)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"]\")",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"]\")]] = fit",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha, \"]\")]] = rs",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "alpha = 1)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "alpha = 0)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "message(paste0(\"--- 3.StepCox\", \"[\", direction,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "for (alpha in seq(0.1, 0.9, 0.1)) {",
+      "message(paste0(\"--- 4.CoxBoost\", \" + Enet\",",
+      "fit = cv.glmnet(x1, x2, family = \"cox\", alpha = alpha,",
+      "cc$Model <- paste0(\"CoxBoost\", \" + Enet\",",
+      "ml.res[[paste0(\"CoxBoost\", \" + Enet\", \"[\u03b1=\",",
+      "riskscore[[paste0(\"CoxBoost\", \" + Enet\", \"[\u03b1=\",",
+      "alpha = 1)",
+      "alpha = 0)",
+      "message(paste0(\"--- 4.CoxBoost + \", \"StepCox\",",
+      "cc$Model <- paste0(\"CoxBoost + \", \"StepCox\",",
+      "ml.res[[paste0(\"CoxBoost + \", \"StepCox\", \"[\",",
+      "riskscore[[paste0(\"CoxBoost + \", \"StepCox\",",
+      "fit = glmnet(x1, x2, family = \"cox\", alpha = 0,",
+      "alpha = 1)",
+      "alpha = 1)",
+      "alpha = 1)",
+      "alpha = 1)",
+      "alpha = 1)",
+      "alpha = 1)",
+      "message(paste0(\"--- 10.Lasso + \", \"StepCox\",",
+      "cc$Model <- paste0(\"Lasso + \", \"StepCox\",",
+      "ml.res[[paste0(\"Lasso + \", \"StepCox\", \"[\",",
+      "riskscore[[paste0(\"Lasso + \", \"StepCox\", \"[\",",
+      "alpha = 1)",
+      "alpha = 1)",
+      "else if (single_ml %in% \"Enet\") {",
+      "message(\"--- Start Enet ---\")",
+      "fit = cv.glmnet(x1, x2, family = \"cox\", alpha = alpha_for_Enet,",
+      "cc$Model <- paste0(\"Enet\", \"[\u03b1=\", alpha_for_Enet,",
+      "ml.res[[paste0(\"Enet\", \"[\u03b1=\", alpha_for_Enet,",
+      "riskscore[[paste0(\"Enet\", \"[\u03b1=\", alpha_for_Enet,",
+      "else if (single_ml %in% \"StepCox\" & direction_for_stepcox %in%",
+      "message(\"--- Start StepCox ---\")",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "fit = glmnet(x1, x2, family = \"cox\", alpha = 0,",
+      "alpha = 1)",
+      "\"StepCox\", \"CoxBoost\", \"Lasso\") & double_ml2 %in%",
+      "c(\"RSF\", \"Enet\", \"StepCox\", \"CoxBoost\", \"plsRcox\",",
+      "if (double_ml1 == \"RSF\" & double_ml2 %in% c(\"Enet\",",
+      "\"StepCox\", \"CoxBoost\", \"plsRcox\", \"superpc\",",
+      "if (double_ml2 == \"Enet\" & alpha_for_Enet %in%",
+      "seq(0.1, 0.9, 0.1)) {",
+      "double_ml2, \" \", alpha_for_Enet, \" ---\"))",
+      "for (alpha in seq(0.1, 0.9, 0.1)) {",
+      "alpha = alpha, nfolds = 10)",
+      "cc$Model <- paste0(\"RSF + \", \"Enet\", \"[\u03b1=\",",
+      "alpha_for_Enet, \"]\")",
+      "ml.res[[paste0(\"RSF + \", \"Enet\", \"[\u03b1=\",",
+      "alpha_for_Enet, \"]\")]] = fit",
+      "riskscore[[paste0(\"RSF + \", \"Enet\", \"[\u03b1=\",",
+      "alpha_for_Enet, \"]\")]] = rs",
+      "else if (double_ml2 == \"StepCox\" & direction_for_stepcox %in%",
+      "cc$Model <- paste0(\"RSF + \", \"StepCox\",",
+      "ml.res[[paste0(\"RSF + \", \"StepCox\", \"[\",",
+      "riskscore[[paste0(\"RSF + \", \"StepCox\", \"[\",",
+      "alpha = 0)",
+      "alpha = 1)",
+      "else if (double_ml1 == \"StepCox\" & double_ml2 %in%",
+      "c(\"CoxBoost\", \"Enet\", \"RSF\", \"plsRcox\", \"superpc\",",
+      "message(paste0(\"---3.StepCox\", \"[\", direction_for_stepcox,",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "else if (double_ml2 == \"Enet\") {",
+      "alpha = alpha_for_Enet, nfolds = 10)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha_for_Enet,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha_for_Enet,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "\"]\", \" + Enet\", \"[\u03b1=\", alpha_for_Enet,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "alpha = 0)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "alpha = 1)",
+      "cc$Model <- paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "ml.res[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "riskscore[[paste0(\"StepCox\", \"[\", direction_for_stepcox,",
+      "warning(\"The number of seleted candidate gene by StepCox, the first machine learning algorithm, is less than 2\")",
+      "c(\"Enet\", \"StepCox\", \"plsRcox\", \"superpc\", \"GBM\",",
+      "if (double_ml2 == \"Enet\" & alpha_for_Enet %in%",
+      "seq(0.1, 0.9, 0.1)) {",
+      "double_ml2, \" \", alpha_for_Enet, \" ---\"))",
+      "alpha = alpha_for_Enet, nfolds = 10)",
+      "cc$Model <- paste0(\"CoxBoost\", \" + Enet\",",
+      "\"[\u03b1=\", alpha_for_Enet, \"]\")",
+      "ml.res[[paste0(\"CoxBoost\", \" + Enet\", \"[\u03b1=\",",
+      "alpha_for_Enet, \"]\")]] = fit",
+      "riskscore[[paste0(\"CoxBoost\", \" + Enet\",",
+      "\"[\u03b1=\", alpha_for_Enet, \"]\")]] = rs",
+      "alpha = 1)",
+      "alpha = 0)",
+      "else if (double_ml2 == \"StepCox\" & direction_for_stepcox %in%",
+      "cc$Model <- paste0(\"CoxBoost + \", \"StepCox\",",
+      "ml.res[[paste0(\"CoxBoost + \", \"StepCox\",",
+      "riskscore[[paste0(\"CoxBoost + \", \"StepCox\",",
+      "c(\"StepCox\", \"CoxBoost\", \"plsRcox\", \"superpc\",",
+      "alpha = 1)",
+      "alpha = 1)",
+      "alpha = 1)",
+      "alpha = 1)",
+      "else if (double_ml2 == \"StepCox\" & direction_for_stepcox %in%",
+      "alpha = 1)",
+      "cc$Model <- paste0(\"Lasso + \", \"StepCox\",",
+      "ml.res[[paste0(\"Lasso + \", \"StepCox\", \"[\",",
+      "riskscore[[paste0(\"Lasso + \", \"StepCox\",",
+      "alpha = 1)",
+      "alpha = 1)"
+    ]
+  },
+  {
+    "path": "Mime_\u7b5b\u9009\u5173\u952eTF/code/\u529f\u80fd\u5dee\u5f02.R",
+    "sha256": "b409c0cafc216054019b6dda71bd0fff2cfef86abcd41518919320dbe5c6f71a",
+    "lines": 117,
+    "packages": [
+      "clusterProfiler",
+      "dplyr",
+      "enrichplot",
+      "ggplot2",
+      "org.Hs.eg.db"
+    ],
+    "io": [
+      "#load(\"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/02_Malig_final_MP_top50.RData\")",
+      "MP_list <- readRDS(file = \"E:/\u670d\u52a1\u5668\u6587\u4ef6\u4e2d\u8f6c\u7ad9/R_data/01_tumor_DEG_list.rds\")",
+      "ggforce::geom_mark_hull(data=a,aes(x,y,group=color2,colour = color2), alpha=0.1, linewidth = 1,linetype='dashed',"
+    ]
+  },
+  {
+    "path": "Result_1/code/01-\u6570\u636e\u9884\u5904\u7406.R",
+    "sha256": "d8e4a3154e74767754e9f80d8a43fb2e9cf12e4472ad6ba28c0ffd68fbb1fd30",
+    "lines": 86,
+    "packages": [
+      "BiocParallel",
+      "Seurat",
+      "decontX",
+      "dplyr",
+      "scDblFinder"
+    ],
+    "io": [
+      "LUAD_merge[[i]] <- readRDS(paste0(dir_path,i))",
+      "#saveRDS(sce, \"./LUAD_project/Result_1/results_data/01_decontX_Contamination.rds\")",
+      "saveRDS(LUAD_merge$scDblFinder.class, \"./LUAD_project/Result_1/results_data/02_scDblFinder.rds\")",
+      "saveRDS(LUAD_merge, \"./LUAD_project/Result_1/results_data/03_LUAD_merge_filter_decontx_double_gene.rds\")"
+    ]
+  },
+  {
+    "path": "Result_1/code/02-\u7ec6\u80de\u6ce8\u91ca.R",
+    "sha256": "4ec6fcd10bb67db8aff0bdd0d5ed3ae87654838671a491d8516cd5371af1d877",
+    "lines": 157,
+    "packages": [
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "harmony"
+    ],
+    "io": [
+      "LUAD_merge <- readRDS(file =\"././LUAD_project/results_data/03_LUAD_merge_filter_decontx_double_gene.rds\")",
+      "saveRDS(LUAD_merge, file = \"./LUAD_project/Result_1/results_data/05_LUAD_cell_anno.rds\")",
+      "saveRDS(LUAD_merge, file = \"./LUAD_project/Result_1/results_data/06_LUAD_cell_anno_final.rds\")"
+    ]
+  },
+  {
+    "path": "Result_1/code/03-\u7ec6\u80de\u6bd4\u4f8b.R",
+    "sha256": "41b6376916c1e9c53ed8b11d2711a0986532fd1e0bce70c1938568df339af0ca",
+    "lines": 122,
+    "packages": [
+      "Seurat",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "patchwork",
+      "reshape2",
+      "tibble",
+      "tidyverse"
+    ],
+    "io": [
+      "LUAD_merge <- readRDS(file = \"./LUAD_project/Result_1/results_data/06_LUAD_cell_anno_final.rds\")",
+      "bxp.errorbar.width = 0.8,"
+    ]
+  },
+  {
+    "path": "Result_1/code/04-\u4e0a\u76ae\u7ec6\u80de\u6ce8\u91ca.R",
+    "sha256": "87de7b4c6de139ca582685f1a9cda9d2175bbd5b1f8a3bf9a15ad8397845017b",
+    "lines": 126,
+    "packages": [
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "ggsci",
+      "harmony"
+    ],
+    "io": [
+      "LUAD_epi <- readRDS(file = \"./LUAD_project/Result_1/results_data/06_LUAD_cell_anno_final.rds\") %>% subset(cell_type == \"Epithelial\")",
+      "saveRDS(LUAD_epi, file = \"./LUAD_project/Result_1/results_data/07_LUAD_epi_anno.rds\")",
+      "saveRDS(LUAD_epi, file = \"./LUAD_project/Result_1/results_data/08_LUAD_epi_anno_final.rds\")"
+    ]
+  },
+  {
+    "path": "Result_1/code/05-infercnv.R",
+    "sha256": "c30e3cfc862fd12532bd38a124dd821901e3caef2027a8565d7e48c564aa975b",
+    "lines": 160,
+    "packages": [
+      "Seurat",
+      "copykat",
+      "dplyr",
+      "ggplot2",
+      "infercnv"
+    ],
+    "io": [
+      "LUAD_epi <- readRDS(file = \"./LUAD_project/Result_1/results_data/08_LUAD_epi_anno_final.rds\")",
+      "setwd(\"./LUAD_project/Result_1/results_data/infercnv/\")",
+      "saveRDS(infercnv_obj2,file = \"./infercnv_obj2.rds\")",
+      "# saveRDS(CNV_score,\"./LUAD_project/Result_1/results_data/09_CNV_score.rds\")",
+      "geom_violin(alpha = 0.4) +    # \u5c0f\u63d0\u7434\u56fe\uff1a\u5c55\u793a\u6570\u636e\u5206\u5e03\u5bc6\u5ea6",
+      "alpha = 0.5, outlier.size = 0"
+    ]
+  },
+  {
+    "path": "Result_2/code/01-\u6837\u672c\u95f4\u5f02\u8d28\u6027.R",
+    "sha256": "fe136f81aa82cef74ef63a4851b0082012555aea8de31459056c9658f11e33dd",
+    "lines": 33,
+    "packages": [
+      "Seurat",
+      "dplyr"
+    ],
+    "io": [
+      "LUAD_epi <- readRDS(\"./LUAD_project/Result_1/results_data/08_LUAD_epi_anno_final.rds\")",
+      "saveRDS(LUAD_epi, file = \"./LUAD_project/Result_2/results_data/01_LUAD_epi_anno_final_NMF_input.rds\")"
+    ]
+  },
+  {
+    "path": "Result_2/code/02-MP_siganure.R",
+    "sha256": "d8609bb0b5a09bd66968b9243a9e4497f5a7b25bd2ee3fb469bd41bdba6a014a",
+    "lines": 527,
+    "packages": [
+      "ComplexHeatmap",
+      "RColorBrewer",
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "ggsci",
+      "parallel",
+      "scales",
+      "tidyverse"
+    ],
+    "io": [
+      "nmf_res <- readRDS(file.path(\"~/LUAD_project/Result_2/results_data/NMF_results/\", sam))",
+      "source(\"~/LUAD_project/Result_2/code/R_scalop/00_tools_robust_nmf_programs.R\")",
+      "load(\"~/LUAD_project/Result_2/results_data/02_Malig_final_MP_top50.RData\")",
+      "LUAD_Epi <- readRDS(\"~/LUAD_project/Result_2/results_data/01_LUAD_epi_anno_final_NMF_input.rds\")",
+      "geom_col(position = position_dodge(0.8), width = 0.7) +",
+      "position = position_dodge(0.8),",
+      "source(file = \"~/LUAD_project/Result_2/code/R_scalop/matrix-ops.R\")",
+      "source(file = \"~/LUAD_project/Result_2/code/R_scalop/sigScores.R\")",
+      "source(file = \"~/LUAD_project/Result_2/code/R_scalop/bin.R\")",
+      "source(file = \"~/LUAD_project/Result_2/code/R_scalop/utils-bin.R\")",
+      "MinScore = 0.8 #\u5355\u6837\u672c\u4e2d\u6bcf\u4e2a\u80bf\u7624\u7ec6\u80de\u7684score\u503c\u5982\u679c\u4f4e\u4e8e 0.8\u7684\u8bdd\u5206\u914d\u4e3a un_assigned\uff0c\u5982\u679c\u5927\u4e8e\u8fd9\u4e2a\u9608\u503c\u7684\u8bdd\uff0c\u90a3\u4e2aMP score\u6700\u9ad8\u5c31\u5206\u914d\u90a3\u4e2a\u6807\u7b7e",
+      "###### \u6bcf\u4e2a\u80bf\u7624\u7ec6\u80de\u7684score\u503c\u5982\u679c\u4f4e\u4e8e 0.8\u7684\u8bdd\u5206\u914d\u4e3a un_assigned\uff0c\u5982\u679c\u5927\u4e8e\u8fd9\u4e2a\u9608\u503c\u7684\u8bdd\uff0c\u90a3\u4e2aMP score\u6700\u9ad8\u5c31\u5206\u914d\u90a3\u4e2a\u6807\u7b7e",
+      "# \u5224\u65ad\u6700\u5927\u503c\u662f\u5426\u5c0f\u4e8e0.8",
+      "saveRDS(LUAD_Epi,file = \"~/LUAD_project/Result_2/results_data/03_LUAD_Epi_assigned_MP.rds\")",
+      "CNV_score <- readRDS(\"~/LUAD_project/Result_1/results_data/09_CNV_score.rds\")",
+      "saveRDS(LUAD_Epi,file = \"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")"
+    ]
+  },
+  {
+    "path": "Result_2/code/03-MP_function.R",
+    "sha256": "0f529ab1ee4986e412e0c6851bf3bb9333f829b91122f8cfae481a115ad596d9",
+    "lines": 108,
+    "packages": [
+      "clusterProfiler",
+      "forcats",
+      "ggplot2",
+      "parallel",
+      "readxl",
+      "scales",
+      "viridis"
+    ],
+    "io": [
+      "load(\"~/LUAD_project/Result_2/results_data/02_Malig_final_MP_top50.RData\")",
+      "#write.csv(pathway[,-c(1:2)],file = \"./LUAD_project/Result_2/results_data/06_MP_pathway.csv\")"
+    ]
+  },
+  {
+    "path": "Result_2/code/04-MP_tumor_state.R",
+    "sha256": "41e7ebc865bb521737e19250f64cfb174f3106e555ac3d833236aa137cfb8e61",
+    "lines": 145,
+    "packages": [
+      "Seurat",
+      "dplyr",
+      "ggrepel",
+      "patchwork"
+    ],
+    "io": [
+      "load(\"~/LUAD_project/Result_2/results_data/02_Malig_final_MP_top50.RData\")",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")"
+    ]
+  },
+  {
+    "path": "Result_2/code/05-MP_stage.R",
+    "sha256": "fbd4b60af0c27aa3fa9d42a22df6e8bfc507b11ff625d0cbbb18117e7da5cb38",
+    "lines": 122,
+    "packages": [
+      "GSVA",
+      "ggpubr",
+      "lemon",
+      "patchwork"
+    ],
+    "io": [
+      "load(\"~/LUAD_project/Result_2/results_data/02_Malig_final_MP_top50.RData\")",
+      "load(file = dir[j])",
+      "load(\"./LUAD_project/bulk/TCGA/TCGA_sur_data_stage.Rdata\")"
+    ]
+  },
+  {
+    "path": "Result_2/code/06-MP_prognosis.R",
+    "sha256": "801f6f28574c389a6777528ca3804f278b637f8389acdcd96bff266ee27a4388",
+    "lines": 923,
+    "packages": [
+      "GSVA",
+      "survival",
+      "survminer",
+      "tinyarray"
+    ],
+    "io": [
+      "load(\"~/LUAD_project/Result_2/results_data/02_Malig_final_MP_top50.RData\")",
+      "load(file = dir[j])",
+      "load(",
+      "load(path.expand(files[j]))",
+      "HR_SCALE <- 0.95"
+    ]
+  },
+  {
+    "path": "Result_2/code/07-MP9_cor_MP41.R",
+    "sha256": "76413064a4ef453a14a2dd7a4f8cdb095cd9fa0fdddee9dcaa03841cf86c651b",
+    "lines": 49,
+    "packages": [
+      "xlsx"
+    ],
+    "io": [
+      "load(\"~/LUAD_project/Result_2/results_data/02_Malig_final_MP_top50.RData\")"
+    ]
+  },
+  {
+    "path": "Result_2/code/08_MP_ratio.R",
+    "sha256": "0e69b76f77f999a461494460baf4c9f1ea8d5799f2144ca31d0b752754fa3cb6",
+    "lines": 100,
+    "packages": [
+      "Seurat",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "patchwork",
+      "reshape2",
+      "tibble",
+      "tidyverse"
+    ],
+    "io": [
+      "LUAD_Epi =readRDS(file = \"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "bxp.errorbar.width = 0.8,"
+    ]
+  },
+  {
+    "path": "Result_2/code/11_MP_univariable_Cox_forest_by_state.R",
+    "sha256": "0481588f2cb9ee519598328bf4b4ad9b2aa3b68a557120d288492d7e6fc3a3b9",
+    "lines": 680,
+    "packages": [
+      "BiocParallel",
+      "GSVA",
+      "ggplot2",
+      "survival"
+    ],
+    "io": [
+      "e <- new.env();load(file.path(root,\"Result_2/results_data/02_Malig_final_MP_top50.RData\"),e)",
+      "saved <- readRDS(cache)",
+      "e <- new.env();load(files[[ds]],e)",
+      "orig <- new.env();load(file.path(root,\"bulk/TCGA/TCGA_sur_data.Rdata\"),orig)",
+      "saveRDS(list(manifest=manifest,inputs=inputs),cache)",
+      "write.csv(res,file.path(work,\"All_9States_8Cohorts_univariable_Cox.csv\"),row.names=FALSE)",
+      "saveRDS(list(results=res,models=models,matching=lapply(inputs,`[[`,\"matching\")),",
+      "HR_SCALE <- 0.95"
+    ]
+  },
+  {
+    "path": "Result_2/code/R_scalop/00_tools_robust_nmf_programs.R",
+    "sha256": "eac9f1ef326c1e9c0ae312bf68520070394025b40627dc76cbecb0632b7c9f01",
+    "lines": 53,
+    "packages": [
+      "RColorBrewer",
+      "parallel",
+      "viridis"
+    ],
+    "io": []
+  },
+  {
+    "path": "Result_2/code/R_scalop/bin.R",
+    "sha256": "12ddc0eba6364122b43a3301c0d07dafa21d26dacf66870c598eb43ac374065e",
+    "lines": 81,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "Result_2/code/R_scalop/matrix-ops.R",
+    "sha256": "2a45654bc55068fd8b9ce0f76cd3cc432d998000823863c5eff177ceacd22256",
+    "lines": 196,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "Result_2/code/R_scalop/sigScores.R",
+    "sha256": "ac6f4eb1ce02ef3452fa5dfa96b1e04e9738f387ded8a11aaf4ffb0ea8fd9fb4",
+    "lines": 219,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "Result_2/code/R_scalop/utils-bin.R",
+    "sha256": "bcef7179ac70dc07b0e193914d2211ebfb107d5278093fc168b59d9a715fb799",
+    "lines": 55,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "Result_3/code/01-tumor_cell_state_DEGs.R",
+    "sha256": "e5f95f2cbe5f36ed4b4a3502564321a677dbef0ea2aeafcb4de779e46435edc5",
+    "lines": 161,
+    "packages": [
+      "GSVA",
+      "Seurat",
+      "ggrepel"
+    ],
+    "io": [
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "#saveRDS(DEG_list,file = \"./LUAD_project/Result_3/results_data/01_tumor_DEG_list.rds\")",
+      "fill = \"grey85\", width = 0.8, alpha = 0.5) +",
+      "fill = \"grey85\", width = 0.8, alpha = 0.5)+",
+      "size= 1.5,width = 0.4, alpha = 0.7)+",
+      "width = 0.8)+",
+      "guides(color=guide_legend(override.aes = list(size=6,alpha=1)))+  coord_cartesian(ylim = c(0.5, 6))",
+      "load(\"./LUAD_project/msigdb_v2024.1.Hs_GMTs/m_hallmark.RData\")"
+    ]
+  },
+  {
+    "path": "Result_3/code/02-tumor_cell_state_validate.R",
+    "sha256": "196f2000e09c0de846d14b0114dfd095c76360d792a32460c382be7c5de9738c",
+    "lines": 65,
+    "packages": [
+      "Seurat",
+      "clusterProfiler",
+      "ggrepel",
+      "patchwork",
+      "readxl"
+    ],
+    "io": [
+      "load(\"./LUAD_project/msigdb_v2024.1.Hs_GMTs/m_hallmark.RData\")",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")"
+    ]
+  },
+  {
+    "path": "Result_4/code/01_SCENIC.R",
+    "sha256": "9c8bf0535604ee8b01fd01794be7c816b1e5d1df0ff5397514ec961da2555f16",
+    "lines": 266,
+    "packages": [
+      "AUCell",
+      "SCENIC",
+      "SCopeLoomR",
+      "Seurat",
+      "biomaRt",
+      "circlize",
+      "dplyr",
+      "ggplot2",
+      "gridExtra",
+      "pheatmap",
+      "viridis"
+    ],
+    "io": [
+      "# LUAD_Epi_assigned_MP_final <- readRDS(\"./LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "# write.csv(t(exprMat), file = \"./LUAD_project/Result_4/scenic/input/pyscenic_input_counts.csv\")",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "zThreshold = 1.5, # \u8bbe\u5b9a\u8c03\u63a7\u5b50\u7684\u9608\u503c\uff0c\u9ed8\u8ba41",
+      "geom_point(size=3, shape=16, color=\"#1F77B4\",alpha =0.4)+",
+      "saveRDS(a_top5,file = \"./LUAD_project/Result_4/results_data/01_top5_TF.rds\")"
+    ]
+  },
+  {
+    "path": "Result_4/code/02_VPS72.R",
+    "sha256": "483ddedc50a6785ceab28d756ff53670d585ec87912e4000f2be311e850c30cd",
+    "lines": 170,
+    "packages": [
+      "GSVA",
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "patchwork",
+      "purrr",
+      "survival",
+      "survminer",
+      "tinyarray"
+    ],
+    "io": [
+      "load(\"./LUAD_project/bulk/TCGA/TCGA_sur_data_stage.Rdata\")",
+      "load(file = dir[j])",
+      "load(\"~/LUAD_project/bulk/TCGA_GEO7.rdata\")",
+      "LUAD_cell_anno_final <- readRDS(\"~/LUAD_project/Result_1/results_data/06_LUAD_cell_anno_final.rds\")",
+      "LUAD_epi_anno_final <- readRDS(\"~/LUAD_project/Result_1/results_data/08_LUAD_epi_anno_final.rds\")"
+    ]
+  },
+  {
+    "path": "Result_4/code/02_VPS72_exp+in_ST.R",
+    "sha256": "a7aeb692f10e5c9856fc686c873985c8dc63089c88be0f772f14c89c7ceda0fb",
+    "lines": 42,
+    "packages": [
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "lemon",
+      "patchwork"
+    ],
+    "io": [
+      "CARD_list <- readRDS(file =  \"./LUAD_project/Result_6/results_data/CARD_list.rds\" )"
+    ]
+  },
+  {
+    "path": "Result_4/code/03_TF_target.R",
+    "sha256": "133a3445e3177908ce30dc6de833e4f74019ce1ee4bec956d046316b406eedc8",
+    "lines": 66,
+    "packages": [
+      "SCENIC",
+      "SCopeLoomR",
+      "dplyr"
+    ],
+    "io": [
+      "load(\"~/LUAD_project/Result_2/results_data/02_Malig_final_MP_top50.RData\")",
+      "TF_names <- readRDS(\"~/LUAD_project/Result_4/results_data/01_top5_TF.rds\")",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "write.csv(edges, \"~/LUAD_project/Result_4/results_data/edges.csv\", row.names = FALSE, quote = FALSE )",
+      "write.csv(nodes, \"~/LUAD_project/Result_4/results_data/nodes.csv\", row.names = FALSE, quote = FALSE)"
+    ]
+  },
+  {
+    "path": "Result_4/scenic/input/change.py",
+    "sha256": "2b9627698ebad7d7dc52292582080f04ce730e7c8d78872395f67e29f473e5af",
+    "lines": 11,
+    "packages": [],
+    "io": [
+      "x=sc.read_csv(\"/media/desk16/iyun6206/PDAC_project/Result_3/result_data/scenic/input/pyscenic_input_counts.csv\");"
+    ]
+  },
+  {
+    "path": "Result_4/scenic/input/convert_cistarget_databases_v1_to_v2.py",
+    "sha256": "7295bb91073363aa77fb35a0f15d60b57594b1d2aad9a751d823d692887b5ba4",
+    "lines": 179,
+    "packages": [],
+    "io": []
+  },
+  {
+    "path": "Result_5/code/01-T_NK_subtype.R",
+    "sha256": "dad3381f32e101efcba223ff5eb6389c9401de152033da2f7e4d39c4ad8265a2",
+    "lines": 208,
+    "packages": [
+      "Seurat",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "harmony",
+      "patchwork",
+      "reshape2",
+      "tibble"
+    ],
+    "io": [
+      "T_NK <- readRDS(file = \"./LUAD_project/Result_1/results_data/06_LUAD_cell_anno_final.rds\") %>% subset(cell_type == \"T/NK\")",
+      "saveRDS(T_NK, file = \"./LUAD_project/Result_5/results_data/01_T_NK_anno.rds\")",
+      "saveRDS(T_NK, file = \"./LUAD_project/Result_5/results_data/02_T_NK_anno_final.rds\")",
+      "bxp.errorbar.width = 0.8,"
+    ]
+  },
+  {
+    "path": "Result_5/code/02-B_subtype.R",
+    "sha256": "ce29a3176040cfef086d496029df9efb3d58e1f2bbf214832f50ab4696d34499",
+    "lines": 211,
+    "packages": [
+      "Seurat",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "harmony",
+      "patchwork",
+      "reshape2",
+      "tibble"
+    ],
+    "io": [
+      "B_subtype <- readRDS(file = \"./LUAD_project/Result_1/results_data/06_LUAD_cell_anno_final.rds\") %>% subset(cell_type  %in% c(\"B\") )",
+      "saveRDS(B_subtype, file = \"./LUAD_project/Result_5/results_data/03_B_subtype_anno.rds\")",
+      "saveRDS(B_subtype, file = \"./LUAD_project/Result_5/results_data/04_B_subtype_anno_final.rds\")",
+      "bxp.errorbar.width = 0.8,"
+    ]
+  },
+  {
+    "path": "Result_5/code/03-myeloid_subtype.R",
+    "sha256": "70b60b6e2fbb08f8cab2e916730dc7f97de542bcfc7eb4709e834d8ebbccbf9f",
+    "lines": 232,
+    "packages": [
+      "Seurat",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "harmony",
+      "patchwork",
+      "reshape2",
+      "tibble"
+    ],
+    "io": [
+      "Myeloid_subtype <- readRDS(file = \"./LUAD_project/Result_1/results_data/06_LUAD_cell_anno_final.rds\") %>% subset(cell_type  %in% c(\"Myeloid\") )",
+      "saveRDS(Myeloid_subtype, file = \"./LUAD_project/Result_5/results_data/05_Myeloid_subtype_anno.rds\")",
+      "saveRDS(Myeloid_subtype, file = \"./LUAD_project/Result_5/results_data/06_Myeloid_subtype_anno_final.rds\")",
+      "bxp.errorbar.width = 0.8,"
+    ]
+  },
+  {
+    "path": "Result_5/code/04-Endo_subtype.R",
+    "sha256": "a56c227b957a2d7a27d309b98519cb1b3f309ba89cdc46947ead3bc52a9edb50",
+    "lines": 223,
+    "packages": [
+      "Seurat",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "harmony",
+      "patchwork",
+      "reshape2",
+      "tibble"
+    ],
+    "io": [
+      "Endo_subtype <- readRDS(file = \"./LUAD_project/Result_1/results_data/06_LUAD_cell_anno_final.rds\") %>% subset(cell_type  %in% c(\"Endothelial\") )",
+      "saveRDS(Endo_subtype, file = \"./LUAD_project/Result_5/results_data/07_Endo_subtype_anno.rds\")",
+      "saveRDS(Endo_subtype, file = \"./LUAD_project/Result_5/results_data/08_Endo_subtype_anno_final.rds\")",
+      "bxp.errorbar.width = 0.8,"
+    ]
+  },
+  {
+    "path": "Result_5/code/05-Fibro_subtype.R",
+    "sha256": "801ca5cb7d45523a84ba5747183d4763f0d69575189ae56ca673a6a90ddb4839",
+    "lines": 222,
+    "packages": [
+      "Seurat",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "harmony",
+      "patchwork",
+      "reshape2",
+      "tibble"
+    ],
+    "io": [
+      "Fibro_subtype <- readRDS(file = \"./LUAD_project/Result_1/results_data/06_LUAD_cell_anno_final.rds\") %>% subset(cell_type  %in% c(\"Fibroblast\") )",
+      "saveRDS(Fibro_subtype, file = \"./LUAD_project/Result_5/results_data/09_Fibro_subtype_anno.rds\")",
+      "saveRDS(Fibro_subtype, file = \"./LUAD_project/Result_5/results_data/10_Fibro_subtype_anno_final.rds\")",
+      "bxp.errorbar.width = 0.8,"
+    ]
+  },
+  {
+    "path": "Result_5/code/05-cellchat.R",
+    "sha256": "a443ecbab2917db2ee53ecf172c05ecbc27937590f2414fe76601afe16a60e95",
+    "lines": 305,
+    "packages": [
+      "CellChat",
+      "Seurat",
+      "future",
+      "ggalluvial",
+      "mindr",
+      "patchwork",
+      "reshape2"
+    ],
+    "io": [
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "T_NK_anno <- readRDS(file = './LUAD_project/Result_5/results_data/02_T_NK_anno_final.rds')",
+      "B_anno <- readRDS(file = './LUAD_project/Result_5/results_data/04_B_subtype_anno_final.rds')",
+      "Myeloid_anno <- readRDS(file = './LUAD_project/Result_5/results_data/06_Myeloid_subtype_anno_final.rds')",
+      "Endo_anno <- readRDS(file = './LUAD_project/Result_5/results_data/08_Endo_subtype_anno_final.rds')",
+      "Fibro_anno <- readRDS(file = './LUAD_project/Result_5/results_data/10_Fibro_subtype_anno_final.rds')",
+      "saveRDS(cellchat, \"./LUAD_project/Result_5/results_data/cellchat.rds\")"
+    ]
+  },
+  {
+    "path": "Result_5/code/\u5c55\u793a\u5171\u6027\u548c\u4e2a\u6027\u7684\u53d7\u914d\u4f53\u5bf9-\u9664\u56feA\u5916\u4e3b\u56fe.R",
+    "sha256": "8b2a451ae55b3463946955fba7669b4ff6e56a8ceea214974b4409bb9b26c768",
+    "lines": 358,
+    "packages": [
+      "CellChat",
+      "Seurat",
+      "ggalluvial",
+      "mindr",
+      "patchwork"
+    ],
+    "io": [
+      "cellchat <- readRDS(\"./LUAD_project/Result_5/results_data/cellchat.rds\")"
+    ]
+  },
+  {
+    "path": "Result_5/code/\u67e5\u770b\u5dee\u5f02L-R\u5728ST\u4e2d\u7684\u8868\u8fbe.R",
+    "sha256": "806553f3d24830630011a9ceec3376dcdb695db6839664a848c233346347c2d3",
+    "lines": 157,
+    "packages": [
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "ggvenn",
+      "lemon",
+      "patchwork"
+    ],
+    "io": [
+      "CARD_list <- readRDS(file = \"./LUAD_project/Result_6/results_data/CARD_list.rds\")"
+    ]
+  },
+  {
+    "path": "Result_5/code/\u67e5\u770b\u5dee\u5f02L-R\u5728ST\u4e2d\u7684\u8868\u8fbe_cancer_region.R",
+    "sha256": "fd16ae47760938be6e1945b3891a96dfdefdedba14e59f0de4fd5d939591734d",
+    "lines": 86,
+    "packages": [
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "ggvenn",
+      "lemon",
+      "patchwork"
+    ],
+    "io": [
+      "CARD_list <- readRDS(file = \"./LUAD_project/Result_6/results_data/CARD_list.rds\")"
+    ]
+  },
+  {
+    "path": "Result_5/code/\u67e5\u770b\u5dee\u5f02L-R\u7684\u9884\u540e.R",
+    "sha256": "4c7ad9eb1eb161fa1ecd54a731f1ce4f2e529c72f64d3aa90a33ef5d90a256ee",
+    "lines": 121,
+    "packages": [
+      "survival",
+      "survminer"
+    ],
+    "io": [
+      "load(\"~/LUAD_project/bulk/TCGA_GEO7.rdata\")",
+      "legend = c(0.8, 0.8),",
+      "load(\"~/LUAD_project/bulk/TCGA_GEO7.rdata\")",
+      "legend = c(0.8, 0.8),"
+    ]
+  },
+  {
+    "path": "Result_6/code/01_IOBR.R",
+    "sha256": "3be2895c7734cef1c170ccf9d9db8cbc6c15f8b4c77653b0183fdfd1bbf0f52c",
+    "lines": 64,
+    "packages": [
+      "IOBR",
+      "Seurat",
+      "ggpubr",
+      "patchwork",
+      "purrr"
+    ],
+    "io": [
+      "load(\"~/LUAD_project/Result_2/results_data/02_Malig_final_MP_top50.RData\")",
+      "load(\"./LUAD_project/bulk/TCGA/TCGA_sur_data_stage.Rdata\")",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "saveRDS(cibersort,file = \"./LUAD_project/Result_6/results_data/01_cibersort.rds\")"
+    ]
+  },
+  {
+    "path": "Result_6/code/02_bayesprism.R",
+    "sha256": "6beed1439e2e16ffe9476404bb846a14cdab4a722450ad125f63ce1717c549a9",
+    "lines": 114,
+    "packages": [
+      "BayesPrism",
+      "ggpubr",
+      "patchwork",
+      "tibble"
+    ],
+    "io": [
+      "load(\"./LUAD_project/bulk/TCGA/TCGA_sur_data_stage.Rdata\")",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "setwd(\"./LUAD_project/Result_6/results_data/\")",
+      "saveRDS(bp.res, file=\"BayesPrism.rds\")"
+    ]
+  },
+  {
+    "path": "Result_6/code/03_tumor_ratio_cluster.R",
+    "sha256": "35fcd69e064337811c9d61fe1075215e4932aae288539b0d5c873dcfb5c89557",
+    "lines": 108,
+    "packages": [
+      "Seurat",
+      "ggplot2",
+      "ggsci",
+      "scales",
+      "tidyverse"
+    ],
+    "io": [
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")"
+    ]
+  },
+  {
+    "path": "Result_6/code/04_CARD.R",
+    "sha256": "5fdb1ace9054b9cb3f4ac3f97d5f91689a089ebc9c556a617f8a76a7fb7b339a",
+    "lines": 169,
+    "packages": [
+      "CARD",
+      "MuSiC",
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "lemon",
+      "patchwork"
+    ],
+    "io": [
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "load(paste0(\"~/LUAD_project/st_datasets/\",dir[i],\".rda\"))",
+      "saveRDS(CARD_list, file =  \"./LUAD_project/Result_6/results_data/CARD_list.rds\"  )",
+      "source(file = \"./LUAD_project/Result_6/code/CARD_visualize.R\")",
+      "CARD_list <- readRDS(file =  \"./LUAD_project/Result_6/results_data/CARD_list.rds\" )"
+    ]
+  },
+  {
+    "path": "Result_6/code/05_RCTD.R",
+    "sha256": "4a0c3d1e4d5b305296b2feed8c36980ddf44db04014e856296e19ba67951c2b9",
+    "lines": 111,
+    "packages": [
+      "Matrix",
+      "STdeconvolve",
+      "doParallel",
+      "ggplot2",
+      "ggpubr",
+      "lemon",
+      "patchwork",
+      "spacexr"
+    ],
+    "io": [
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "load(paste0(\"~/LUAD_project/st_datasets/\",dir[i],\".rda\"))",
+      "ylimit = c(0,round(quantile(puck@nUMI,0.9))),",
+      "saveRDS(RCTD,'./LUAD_project/Result_6/results_data/RCTD_visium_full.rds')",
+      "RCTD <- readRDS('./LUAD_project/Result_6/results_data/RCTD_visium_full.rds')",
+      "CARD_list <- readRDS(file =  \"./LUAD_project/Result_6/results_data/CARD_list.rds\" )"
+    ]
+  },
+  {
+    "path": "Result_6/code/05_RCTD_\u53ef\u89c6\u5316.R",
+    "sha256": "7ca8f9b740af4458412eb02db55ed6f87e69c35fc849f174e6b8e1d67b2f28d9",
+    "lines": 143,
+    "packages": [
+      "RColorBrewer",
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "ggsci",
+      "lemon",
+      "patchwork"
+    ],
+    "io": [
+      "CARD_list <- readRDS(file =  \"./LUAD_project/Result_6/results_data/CARD_list.rds\")",
+      "RCTD <- readRDS('./LUAD_project/Result_6/results_data/RCTD_visium_full.rds')"
+    ]
+  },
+  {
+    "path": "Result_6/code/CARD_visualize.R",
+    "sha256": "97155205c1330fb6375aa2b08fdea29c4a05752eaa488cabc777fc6415d1d52d",
+    "lines": 52,
+    "packages": [
+      "gtools",
+      "scatterpie"
+    ],
+    "io": []
+  },
+  {
+    "path": "Result_7/01.\u6570\u636e\u6574\u7406.R",
+    "sha256": "6b8583c44fd70b28cdd35f3083d49e0d1e731963b53ca482ed2ca40486b2490f",
+    "lines": 189,
+    "packages": [
+      "Matrix",
+      "Seurat",
+      "dplyr",
+      "future",
+      "readxl"
+    ],
+    "io": [
+      "sample_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Bischoff2021_Lung/Samples.csv\")",
+      "cell_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Bischoff2021_Lung/Cells.csv\",row.names = 1)",
+      "saveRDS(Data_Bischoff2021_Lung, file = \"F:/LUAD/data/single_cell/Data_Bischoff2021_Lung/Data_Bischoff2021_Lung.rds\")",
+      "sample_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Kim2020_Lung/Samples.csv\")",
+      "cell_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Kim2020_Lung/Cells.csv\",row.names = 1)",
+      "saveRDS(Data_Kim2020_Lung, file = \"F:/LUAD/data/single_cell/Data_Kim2020_Lung/Data_Kim2020_Lung.rds\")",
+      "sample_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Laughney2020_Lung/Samples.csv\")",
+      "cell_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Laughney2020_Lung/Cells.csv\",row.names = 1)",
+      "saveRDS(Data_Laughney2020_Lung, file = \"F:/LUAD/data/single_cell/Data_Laughney2020_Lung/Data_Laughney2020_Lung.rds\")",
+      "sample_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Qian2020_Lung/Meta-data.csv\")",
+      "cell_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Qian2020_Lung/Cells.csv\",row.names = 1)",
+      "saveRDS(Data_Qian2020_Lung, file = \"F:/LUAD/data/single_cell/Data_Qian2020_Lung/Data_Qian2020_Lung.rds\")",
+      "sample_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Xing2021_Lung/Meta-data.csv\")",
+      "cell_info <- read.csv(\"F:/LUAD/data/single_cell/Data_Xing2021_Lung/Cells.csv\",row.names = 1)",
+      "saveRDS(Data_Xing2021_Lung, file = \"F:/LUAD/data/single_cell/Data_Xing2021_Lung/Data_Xing2021_Lung.rds\")",
+      "saveRDS(Data_Zhu2022_Lung, file = \"F:/LUAD/data/single_cell/Data_Zhu2022_Lung/Data_Zhu2022_Lung.rds\")"
+    ]
+  },
+  {
+    "path": "Result_7/code/01-monocle.R",
+    "sha256": "60312856c60395a3edf19f409c8a287e502a803d0f7c2510acc20059c31e2c10",
+    "lines": 73,
+    "packages": [
+      "Seurat",
+      "dplyr",
+      "igraph",
+      "monocle",
+      "purrr"
+    ],
+    "io": [
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_8/results_data/LUAD_Epi_assigned_MP_har.rds\")",
+      "#saveRDS(p_data,file = \"./p_data.rds\")",
+      "saveRDS(cd,file = \"./LUAD_project/Result_7/results_data/01_monocle.rds\")"
+    ]
+  },
+  {
+    "path": "Result_7/code/02-slingshot.R",
+    "sha256": "35b78768aa06c7ca88f68a53e51ecb46e33d494bcea3e0d0b4d6c2dc8c74c594",
+    "lines": 136,
+    "packages": [
+      "RColorBrewer",
+      "Seurat",
+      "dittoSeq",
+      "dplyr",
+      "fields",
+      "scales",
+      "slingshot"
+    ],
+    "io": [
+      "cds <- readRDS(\"./LUAD_project/Result_7/results_data/03_cds_monocle3.rds\")",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_8/results_data/LUAD_Epi_assigned_MP_har.rds\")",
+      "saveRDS(sce_slingshot1, file = \"./LUAD_project/Result_7/results_data/02_sce_slingshot1.rds\")",
+      "lty = 1, lwd = 2, cex = 0.8)",
+      "legend.args = list(text = \"Pseudotime\", side = 4, line = 2.5, cex = 0.8),",
+      "smallplot = c(0.85, 0.88, 0.65, 0.85),  # \u8c03\u6574\u56fe\u4f8b\u4f4d\u7f6e\u548c\u5927\u5c0f",
+      "geom_density(alpha=0.5) +"
+    ]
+  },
+  {
+    "path": "Result_7/code/03-monocle3.R",
+    "sha256": "208f76ba0b39ed1cfb5c252d2b8f31e27afa6cce0203ddb671bc97559f575510",
+    "lines": 104,
+    "packages": [
+      "SCopeLoomR",
+      "Seurat",
+      "ggplot2",
+      "igraph",
+      "lemon",
+      "monocle3",
+      "patchwork"
+    ],
+    "io": [
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_8/results_data/LUAD_Epi_assigned_MP_har.rds\")",
+      "saveRDS(cds, file = \"./LUAD_project/Result_7/results_data/03_cds_monocle3.rds\")",
+      "saveRDS(TF_activate_pseudotime,file =\"./LUAD_project/Result_7/results_data/TF_activate_pseudotime.rds\")"
+    ]
+  },
+  {
+    "path": "Result_7/code/04-CNV_steam_scores.R",
+    "sha256": "16ed050b8c06201d2094908fd6ce0fb1a9d66dd84f1f83def52e6428c72914ea",
+    "lines": 170,
+    "packages": [
+      "CytoTRACE",
+      "Seurat",
+      "dplyr",
+      "ggplot2",
+      "ggsci",
+      "scales",
+      "tidyverse"
+    ],
+    "io": [
+      "geom_violin(alpha = 0.4) +    # \u5c0f\u63d0\u7434\u56fe\uff1a\u5c55\u793a\u6570\u636e\u5206\u5e03\u5bc6\u5ea6",
+      "alpha = 0.5, outlier.size = 0, size = 0.3, width = 0.3",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_8/results_data/LUAD_Epi_assigned_MP_har.rds\")",
+      "saveRDS(results,file = \"./LUAD_project/Result_7/results_data/CytoTRACE.rds\")",
+      "geom_violin(alpha = 0.4) +    # \u5c0f\u63d0\u7434\u56fe\uff1a\u5c55\u793a\u6570\u636e\u5206\u5e03\u5bc6\u5ea6",
+      "alpha = 0.5, outlier.size = 0, size = 0.3, width = 0.3"
+    ]
+  },
+  {
+    "path": "Result_8/code/01_TF\u751f\u5b58.R",
+    "sha256": "dfe5fddc3fababb2cec9b4b7b6e6ed17cb7ce9d5e7a880875ee5ca29fe711eec",
+    "lines": 275,
+    "packages": [
+      "Seurat",
+      "forestplot",
+      "ggplot2",
+      "glmnet",
+      "survival",
+      "survminer",
+      "tidyverse"
+    ],
+    "io": [
+      "TF_names <- readRDS(\"~/LUAD_project/Result_4/results_data/01_top5_TF.rds\")",
+      "load(\"~/LUAD_project/bulk/TCGA_GEO7.rdata\")",
+      "geom_vline(xintercept = 0, linetype = \"dashed\", color = \"grey\", size = 0.8) +",
+      "geom_jitter(height = 0.15, alpha = 1, size = 1.5) +",
+      "legend = c(0.8, 0.8),",
+      "saveRDS(lasso, file = \"~/LUAD_project/Result_8/results_data/01_lasso.rds\")"
+    ]
+  },
+  {
+    "path": "Result_8/code/02_scissor.R",
+    "sha256": "8a55bef37056e7270bc9de5fe155c74660193a6e65a7e1fc3952e9bb4a3eb30f",
+    "lines": 946,
+    "packages": [
+      "Scissor",
+      "Seurat",
+      "future",
+      "ggplot2",
+      "harmony",
+      "igraph",
+      "lemon",
+      "patchwork"
+    ],
+    "io": [
+      "source(\"~/LUAD_project/Result_8/code/scissor_function.R\")",
+      "# LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_2/results_data/04_LUAD_Epi_assigned_MP_final.rds\")",
+      "#saveRDS(LUAD_Epi_assigned_MP, file = \"~/LUAD_project/Result_8/results_data/LUAD_Epi_assigned_MP_har.rds\")",
+      "LUAD_Epi_assigned_MP  <- readRDS(\"~/LUAD_project/Result_8/results_data/LUAD_Epi_assigned_MP_har.rds\")",
+      "load(\"~/LUAD_project/bulk/TCGA_GEO7.rdata\")",
+      "infos1 <- Scissor(expr_list[[i]], LUAD_Epi_assigned_MP, phenotype, alpha = 0.05,",
+      "saveRDS(LUAD_Epi_assigned_MP, file = \"~/LUAD_project/Result_8/results_data/02_LUAD_Epi_assigned_MP_Scissor.rds\")",
+      "obj <- readRDS(input_rds)",
+      "write.csv(",
+      "write.csv(",
+      "write.csv(",
+      "0.95,",
+      "0.95,",
+      "write.csv("
+    ]
+  },
+  {
+    "path": "Result_8/code/03_\u591a\u56e0\u7d20.R",
+    "sha256": "d62563c7250fd220fb252eb7896d564a8484a32a7d946d587471365843c0709c",
+    "lines": 249,
+    "packages": [
+      "data.table",
+      "dplyr",
+      "forestplot",
+      "grid",
+      "survival",
+      "survminer",
+      "tidyverse"
+    ],
+    "io": [
+      "TCGA_riskscore <- readRDS(\"~/LUAD_project/Result_8/results_data/TCGA_riskscore.rds\")",
+      "load(\"~/LUAD_project/bulk/TCGA/TCGA_sur_data.Rdata\")",
+      "lineheight  = unit(0.9, \"cm\"),",
+      "lineheight  = unit(0.9, \"cm\"),"
+    ]
+  },
+  {
+    "path": "Result_8/code/04_\u514d\u75ab\u6d78\u6da6.R",
+    "sha256": "ae42e13edffcde299da189fc2b6ee0759cef2069a1f02d3fd36e2a92c1b6e0cc",
+    "lines": 175,
+    "packages": [
+      "IOBR",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "patchwork",
+      "reshape2"
+    ],
+    "io": [
+      "load(\"~/LUAD_project/bulk/TCGA_GEO7.rdata\")",
+      "Model_riskscore <- readRDS(\"~/LUAD_project/Result_8/results_data/Model_riskscore.rds\")",
+      "alpha = 0.5",
+      "saveRDS(estimate_list, file = \"~/LUAD_project/Result_8/results_data/Estimate.rds\")",
+      "alpha = 0.5",
+      "saveRDS(cibersort_list, file = \"~/LUAD_project/Result_8/results_data/Cibersort.rds\")"
+    ]
+  },
+  {
+    "path": "Result_8/code/05_\u514d\u75ab\u6d78\u6da6_celltype.R",
+    "sha256": "dd0faddbea853a1ba0732b43ac4ac58db0bfa8b81cbee8734c49c79255550f85",
+    "lines": 74,
+    "packages": [
+      "IOBR",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "patchwork",
+      "reshape2"
+    ],
+    "io": [
+      "cibersort_list =  readRDS( file = \"~/LUAD_project/Result_8/results_data/Cibersort.rds\")",
+      "alpha = 0.5"
+    ]
+  },
+  {
+    "path": "Result_8/code/06_IC50.R",
+    "sha256": "12f058577732398b5c4dd86b615d7a9d85f0fc1f8a8a57f62d99bdcf3497a677",
+    "lines": 42,
+    "packages": [
+      "data.table",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "oncoPredict",
+      "reshape2"
+    ],
+    "io": [
+      "CTRP2_Expr<-readRDS(\"./LUAD_project/Result_8/DataFiles/Training Data/CTRP2_Expr (TPM, not log transformed).rds\")",
+      "CTRP2_Res<-readRDS(\"./LUAD_project/Result_8/DataFiles/Training Data/CTRP2_Res.rds\")",
+      "load(\"~/LUAD_project/bulk/TCGA_GEO7.rdata\")",
+      "Model_riskscore <- readRDS(\"~/LUAD_project/Result_8/results_data/Model_riskscore.rds\")",
+      "setwd(paste0(\"~/LUAD_project/Result_8/results_data/ic50_\",i))",
+      "saveRDS(pred_ic50_results, file = \"./LUAD_project/Result_8/results_data/pred_ic50_results.rds\")"
+    ]
+  },
+  {
+    "path": "Result_8/code/06_stage_sur.R",
+    "sha256": "5b9a4f89241939afca6fe2b5d709882d51874906697963e13f07cc9ef7bb99b0",
+    "lines": 139,
+    "packages": [
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "survival",
+      "survminer"
+    ],
+    "io": [
+      "TCGA_riskscore <- readRDS(\"~/LUAD_project/Result_8/results_data/TCGA_riskscore.rds\")",
+      "load(\"./LUAD_project/bulk/TCGA_GEO7.rdata\")",
+      "legend.position = c(0.80, 0.86),",
+      "axis.line = element_line(linewidth = 0.9)"
+    ]
+  },
+  {
+    "path": "Result_8/code/07_RS_8cohorts_multivariable_Cox.R",
+    "sha256": "ed15cbef6a5c93dfc13a8e13bec821b43b1bf579659fa131e34ea1f35fd19773",
+    "lines": 149,
+    "packages": [
+      "ggplot2",
+      "survival"
+    ],
+    "io": [
+      "risk<-readRDS(file.path(root,\"Result_8/results_data/Model_riskscore.rds\"))",
+      "clinical<-readRDS(file.path(root,\"bulk/7\u5957GEO\u548cTCGA\u4e34\u5e8a\u4fe1\u606f\u7528\u4e8e\u591a\u56e0\u7d20fenx.rds\"))",
+      "original<-new.env();load(file.path(root,\"bulk/TCGA/TCGA_sur_data.Rdata\"),original)"
+    ]
+  },
+  {
+    "path": "Result_8/code/08_download_FOXM1_DepMap.py",
+    "sha256": "fa56fa8a6ce9d83b2182c538b1c866e0334423b521410a5b086bc1607c931575",
+    "lines": 60,
+    "packages": [],
+    "io": [
+      "def download(url, path):",
+      "download(API, metadata_path)",
+      "download(source['download_url'], dest)"
+    ]
+  },
+  {
+    "path": "Result_8/code/09_FOXM1_DepMap_LUAD_CRISPR.R",
+    "sha256": "77d1fee6ba08cfc999a855d375a3b04897fb4953824b47fd783c9c4f38423c84",
+    "lines": 138,
+    "packages": [
+      "data.table",
+      "ggplot2"
+    ],
+    "io": [
+      "write.csv(engineered,file.path(out,\"FOXM1_LUAD_engineered_models_excluded.csv\"),row.names=FALSE)",
+      "write.csv(luad,file.path(out,\"FOXM1_LUAD_all_models_with_coverage.csv\"),row.names=FALSE)",
+      "write.csv(z,file.path(out,\"FOXM1_LUAD_GeneEffect_ranked.csv\"),row.names=FALSE)",
+      "write.csv(all_effect,file.path(out,\"FOXM1_all_screened_models.csv\"),row.names=FALSE)",
+      "write.csv(summary_table,file.path(out,\"FOXM1_LUAD_summary.csv\"),row.names=FALSE)",
+      "write.csv(featured,file.path(out,\"FOXM1_selected_cell_lines.csv\"),row.names=FALSE)",
+      "source(file.path(root,\"Result_8/code/10_FOXM1_DepMap_ranked_landscape.R\"),local=new.env(parent=environment()))",
+      "geom_point(position=position_jitter(width=.10,height=0,seed=2026),alpha=.8,size=2,color=\"#335775\")+",
+      "saveRDS(list(release=\"DepMap 24Q4 Public v1\",doi=\"10.25452/figshare.plus.27993248.v1\","
+    ]
+  },
+  {
+    "path": "Result_8/code/10_FOXM1_DepMap_ranked_landscape.R",
+    "sha256": "81ae7b4d766c56533a0e51321d34cde0d73ac8bec297bcead8a1013e22fd7f96",
+    "lines": 36,
+    "packages": [
+      "ggplot2"
+    ],
+    "io": [
+      "dat<-read.csv(file.path(root,\"Result_8/results_data/FOXM1_DepMap/FOXM1_LUAD_GeneEffect_ranked.csv\"),check.names=FALSE)"
+    ]
+  },
+  {
+    "path": "Result_8/code/scissor_function.R",
+    "sha256": "0a51ee1cba16127b994410957a4850ab5cb09f7a76972b95cad2998c65464027",
+    "lines": 123,
+    "packages": [
+      "Matrix",
+      "Seurat",
+      "preprocessCore"
+    ],
+    "io": [
+      "Scissor <- function (bulk_dataset, sc_dataset, phenotype, tag = NULL, alpha = NULL,",
+      "load(Load_file)",
+      "0.6, 0.7, 0.8, 0.9)",
+      "alpha = alpha[i], Omega = network, nlambda = 100,",
+      "alpha = alpha[i], Omega = network, lambda = fit0$lambda.min)",
+      "print(sprintf(\"alpha = %s\", alpha[i]))",
+      "return(list(para = list(alpha = alpha[i], lambda = fit0$lambda.min,"
+    ]
+  },
+  {
+    "path": "bulk/\u8bca\u65ad\u6570\u636e/Step_MP_ROC_curves_plot.R",
+    "sha256": "74ac57d06ead810cd28773de2ccf70247bc5d60e1345c925eccb6910c1c318f2",
+    "lines": 226,
+    "packages": [
+      "dplyr",
+      "ggplot2",
+      "pROC",
+      "tidyr"
+    ],
+    "io": [
+      "setwd(result_dir)",
+      "score_list <- readRDS(",
+      "all_datasets_merged_list <- readRDS(",
+      "geom_line(linewidth = 0.8) +"
+    ]
+  },
+  {
+    "path": "bulk/\u8bca\u65ad\u6570\u636e/Step_redraw_heatmap_ROC.R",
+    "sha256": "2c36df66b7528230b58a5644859865c2d3da791c03b9b763f8a787c3b3af1c23",
+    "lines": 204,
+    "packages": [
+      "dplyr",
+      "ggplot2",
+      "pROC",
+      "tidyr"
+    ],
+    "io": [
+      "setwd(result_dir)",
+      "score_list <- readRDS(",
+      "all_datasets_merged_list <- readRDS(",
+      "geom_line(linewidth = 0.8) +"
+    ]
+  },
+  {
+    "path": "bulk/\u8bca\u65ad\u6570\u636e/Step_ssgsea_MP_AUC.R",
+    "sha256": "dc2a945ae5feac0719b3113c856fede60e2bdeb051cd913cff06cc2ec4354278",
+    "lines": 283,
+    "packages": [
+      "GSVA",
+      "dplyr",
+      "ggplot2",
+      "openxlsx",
+      "pROC",
+      "tidyr"
+    ],
+    "io": [
+      "setwd(result_dir)",
+      "load(",
+      "all_datasets_merged_list <- readRDS(",
+      "saveRDS("
+    ]
+  }
+]

@@ -435,8 +435,9 @@ run_analysis <- function(
   new_order <- c("Cluster_1", "Cluster_8", "Cluster_2", "Cluster_7", "Cluster_4",
                  "Cluster_6", "Cluster_5", "Cluster_3", "Cluster_9")
   cluster_list <- cluster_list[new_order]
-  mp_list <- mp_list[new_order]
-  names(mp_list) <- paste0("MP_", 1:length(mp_list))
+  # Cluster_* names belong to cluster_list, not the MP_* gene-list keys.
+  # Preserve legacy MP identifiers for the explicit downstream state mapping.
+  stopifnot(setequal(names(mp_list), paste0("MP_", 1:9)))
 
   # Plot Jaccard heatmap
   plot_jaccard_heatmap(nmf_intersect_original, cluster_list,
@@ -444,7 +445,9 @@ run_analysis <- function(
                        custom_magma)
 
   # Save clusters
-  save(Cluster_list = cluster_list, MP_list = mp_list, nmf_programs_original,
+  Cluster_list <- cluster_list
+  MP_list <- mp_list
+  save(Cluster_list, MP_list, nmf_programs_original,
        nmf_intersect_original, file = file.path(output_data_dir, "02_Malig_final_MP_top50.RData"))
 
   # Load LUAD data for abundance and assignment
