@@ -31,6 +31,10 @@ Six samples: TD5 (AIS), TD8 (AIS), TD3 (MIA), TD6 (MIA), TD1 (IAC), TD2 (IAC).
 
 ### 3. Bulk Transcriptomics
 
+#### Survival analysis and prognostic model validation
+
+Eight cohorts were used for survival analysis and prognostic model validation:
+
 | Cohort | Platform | Access |
 |--------|----------|--------|
 | TCGA-LUAD | RNA-seq | [TCGA Data Portal](https://portal.gdc.cancer.gov/) |
@@ -41,6 +45,20 @@ Six samples: TD5 (AIS), TD8 (AIS), TD3 (MIA), TD6 (MIA), TD1 (IAC), TD2 (IAC).
 | GSE30219 | Microarray | GEO |
 | GSE72094 | Microarray | GEO |
 | GSE11969 | Microarray | GEO |
+
+#### Diagnostic evaluation
+
+Seven cohorts containing LUAD and non-tumor lung samples were used to evaluate the diagnostic performance of MP signatures:
+
+| Cohort | Platform | Access |
+|--------|----------|--------|
+| TCGA-LUAD | RNA-seq | [TCGA Data Portal](https://portal.gdc.cancer.gov/) |
+| GSE10072 | Microarray | [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10072) |
+| GSE32863 | Microarray | [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE32863) |
+| GSE63459 | Microarray | [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63459) |
+| GSE19188 | Microarray | [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE19188) |
+| GSE68571 | Microarray | [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68571) |
+| GSE31210 | Microarray | [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31210) |
 
 ### 4. Reference Gene Sets
 

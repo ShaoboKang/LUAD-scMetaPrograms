@@ -56,23 +56,19 @@ Rscript scripts/10_dependency/02_foxm1_dependency.R
 
 These examples are individual stages, not a one-command end-to-end pipeline. The [reproduction guide](docs/reproduction.md) identifies manually curated annotations, intermediate objects, spatial prerequisites and optional exploratory scripts. NMF, SCENIC, deconvolution and model training require substantial computation and method-specific environments.
 
-## State identifiers
+## Meta-programs and states
 
-The original saved gene-list identifiers are preserved. Apply this mapping once when displaying manuscript states:
-
-| Legacy MP | Manuscript MP | State |
-|---|---|---|
-| MP_1 | MP1 | G2M |
-| MP_8 | MP2 | G1S |
-| MP_2 | MP3 | NFkB (NFκB) |
-| MP_7 | MP4 | MHC-II |
-| MP_4 | MP5 | Translation |
-| MP_6 | MP6 | OXPHOS |
-| MP_5 | MP7 | Adhesion |
-| MP_3 | MP8 | EMT |
-| MP_9 | MP9 | Glycolysis |
-
-The MP gene list must not be indexed using `Cluster_*` keys. The consensus identification script now checks the expected nine `MP_*` keys before saving. Existing serialized objects should retain their original labels; avoid remapping an already remapped object.
+| meta-program | State |
+|---|---|
+| MP1 | G2M |
+| MP2 | G1S |
+| MP3 | NFκB |
+| MP4 | MHC-II |
+| MP5 | Translation |
+| MP6 | OXPHOS |
+| MP7 | Adhesion |
+| MP8 | EMT |
+| MP9 | Glycolysis |
 
 ## Validation and evidence
 

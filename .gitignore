@@ -58,11 +58,10 @@ Thumbs.db
 *~
 
 # ---- Manuscript files (publisher copyright) ----
-manuscript/*
+manuscript/
 
 # Release validation and packaged documentation
 !results/README.md
-!manuscript/README.md
 # External GraphBAN/docking working assets
 vendor/GraphBAN/inductive_mode/result/
 vendor/GraphBAN/inductive_mode/trained_models/
